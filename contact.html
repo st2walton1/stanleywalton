@@ -1,520 +1,351 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/MM/Desktop/Stanley/intro.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>STANLEY WALTON  - Contact Me</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="stylesheet" href="./about_files/main.css">
-		<style type="text/css">
-<!--
-.about-image11111111 {display: block;
-    margin: 2em auto;
-    width: 250px;
-    border-radius: 10px;
-}
-.about-image111111111 {display: block;
-    margin: 2em auto;
-    width: 250px;
-    border-radius: 10px;
-}
-.style1 {font-size: x-large}
-.resume-btn {        display:inline-block;
-        padding:12px 24px;
-        background:#0A66C2;
-        color:white;
-        text-decoration:none;
-        border-radius:6px;
-        font-weight:bold;
-        transition:0.3s ease;
-        margin-top:20px;
-}
-.resume-container {        text-align:center;
-        margin-top:25px;
-        margin-bottom:25px;
-}
--->
-        </style>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="">
+<html lang="en">
 
-		<!-- Wrapper -->
-	<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <title>STANLEY WALTON - Contact Me</title>
 
-				<!-- Header -->
-					<header id="header">
-					  <h1>Contact Me <br>
-					  </h1>
-					  <!-- Replace src with your photo if desired -->
-					  <p align="left"><span class="style1">Let's Work Together</span>
-					  <p class="style1"><strong>Phone:</strong> +234 816-407-1462<br>
-					    <strong>Email: </strong>st2walton1@gmail.com<br>
-					    <strong>Location:</strong> Lagos, Nigeria<br>
-					    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">https://linkedin.com/in/stanley-walton-08a774396</a><br>
-					    <strong>Portfolio:</strong> <a href="https://st2walton1.github.io/stanleywalton/" target="_blank">https://st2walton1.github.io/stanleywalton/
-					    </a>
-					  <div class="resume-container"> <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank"
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#0d1117;
+            color:white;
+            line-height:1.6;
+            padding:40px 20px;
+        }
+
+        #wrapper{
+            max-width:1000px;
+            margin:auto;
+        }
+
+        #header{
+            background:rgba(255,255,255,0.04);
+            padding:40px;
+            border-radius:12px;
+            backdrop-filter:blur(8px);
+        }
+
+        h1{
+            text-align:center;
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .intro-text{
+            text-align:center;
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .contact-info{
+            text-align:center;
+            font-size:18px;
+            margin-bottom:30px;
+        }
+
+        .contact-info a{
+            color:#58a6ff;
+            text-decoration:none;
+        }
+
+        .contact-info a:hover{
+            text-decoration:underline;
+        }
+
+        .resume-container{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .resume-btn{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            padding:14px 28px;
+            background:#0A66C2;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+            transition:0.3s ease;
+        }
+
+        .resume-btn:hover{
+            background:#004182;
+        }
+
+        .contact-form-container{
+            background:rgba(255,255,255,0.03);
+            padding:35px;
+            border-radius:12px;
+            margin-top:20px;
+        }
+
+        .contact-form-container h2{
+            text-align:center;
+            margin-bottom:30px;
+            font-size:32px;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+            width:100%;
+            padding:15px;
+            margin-bottom:20px;
+            border-radius:8px;
+            border:1px solid rgba(255,255,255,0.15);
+            background:rgba(255,255,255,0.05);
+            color:white;
+            font-size:16px;
+            outline:none;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder{
+            color:#cccccc;
+        }
+
+        .contact-form textarea{
+            resize:vertical;
+        }
+
+        .contact-form button{
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#0A66C2;
+            color:white;
+            border:none;
+            padding:16px;
+            border-radius:8px;
+            font-size:18px;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s ease;
+        }
+
+        .contact-form button:hover{
+            background:#004182;
+        }
+
+        nav{
+            margin-top:40px;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            list-style:none;
+            gap:15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            padding:10px 18px;
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius:6px;
+            transition:0.3s ease;
+        }
+
+        nav ul li a:hover{
+            background:#0A66C2;
+            border-color:#0A66C2;
+        }
+
+        .social-icons{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .social-icons a{
+            margin:0 12px;
+            color:#58a6ff;
+            text-decoration:none;
+            font-size:18px;
+        }
+
+        .social-icons a:hover{
+            text-decoration:underline;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:40px;
+            font-size:14px;
+            color:#999;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:36px;
+            }
+
+            .intro-text{
+                font-size:18px;
+            }
+
+            #header{
+                padding:25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header id="header">
+
+        <h1>Contact Me</h1>
+
+        <p class="intro-text">
+            Ready to delegate? Let's connect and work together.<br>
+            Please use the form below to reach out, or contact me directly using your preferred method.        </p>
+
+        <div class="contact-info">
+
+            <p>
+                <strong>Phone:</strong> +234 816-407-1462            </p>
+
+            <p>
+                <strong>Email:</strong> st2walton1@gmail.com            </p>
+
+            <p>
+                <strong>Location:</strong> Lagos, Nigeria            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">
+                    linkedin.com/in/stanley-walton-08a774396                </a>            </p>
+
+            <p>
+                <strong>Portfolio:</strong>
+                <a href="https://st2walton1.github.io/stanleywalton/" target="_blank">
+                    st2walton1.github.io/stanleywalton                </a>            </p>
+        </div>
+
+        <div class="resume-container">
+
+            <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf"
+               target="_blank"
                class="resume-btn"
-               download> Download Resume </a> </div>
-					  <p class="style1">
-                        <nav class="use-middle">
-                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="intro.html">Intro</a></li>
-                        <li class="is-middle"><a href="experience.html">Experience</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li class="is-middle"><a href="skills.html">SKILLS</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li></li>
-                        <!--<li><a href="#elements">Elements</a></li>-->
-                      </ul>
-			          </nav>
-				      </nav>
-                    </header>
+               download>
 
-				<!-- Main -->
-					<div id="main" style="display: none;">
+                Download Resume            </a>        </div>
 
-						<!-- Intro -->
-							<article id="intro" style="display: none;">
-								<h2 class="major">Welcome</h2>
-								<span class="image main"><img src="./about_files/banner.jpg" alt=""></span>
-		<p>Charles Walton is a dedicated Data Analyst and Engineer passionate about transforming data into actionable insights.
-			Proficient in SQL, Python, Power BI, and Excel, he excels at extracting, analyzing, and visualizing data to support
-			informed decision-making.</p>
-		
-		<p>With hands-on experience in building data pipelines, dashboards, and reports, Charles combines technical precision
-			with creativity to deliver clear, impactful visualizations. He thrives in dynamic environments, turning complex
-			datasets into strategic insights that drive business growth.</p>
-		
-		<h3>Proven Results</h3>
-		<ul>
-			<li>Enhanced industrial supply chain efficiency using advanced data analytics and AI-driven insights</li>
-			<li>Developed scalable data pipelines and ETL processes supporting platforms with 100M+ users globally</li>
-			<li>Secured over $2.5M in pre-product investment through innovative data-driven solutions and technical vision</li>
-			<li>Built and led high-performing data and engineering teams within startups and tech companies</li>
-		</ul>
-		
-		<h3>Technical Achievements</h3>
-		<ul>
-			<li><strong>Data Infrastructure:</strong> Designed and deployed large-scale data pipelines, ETL workflows, and
-				cloud-based data warehouses (AWS, GCP)</li>
-			<li><strong>AI &amp; ML Integration:</strong> Implemented machine learning models and analytics solutions to optimize
-				operational workflows</li>
-			<li><strong>Platform Development:</strong> Led the development of data platforms supporting real-time analytics and
-				business intelligence</li>
-			<li><strong>Automation &amp; Optimization:</strong> Created automated data processing pipelines reducing manual effort
-				and increasing accuracy</li>
-			<li><strong>Technical Publications:</strong> Authored guides on data architecture best practices and cloud
-				deployment strategies</li>
-		</ul>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							</article>
+        <!-- CONTACT FORM -->
 
-						<!-- Work -->
-							<article id="work" style="display: none;">
-								<h2 class="major">Sales Dashboard Analysis</h2>
-								<a href="https://github.com/cwalton133/Sales_Dashboard_Analysis" target="_blank"> <span class="image main"><img src="./about_files/1719093595699.jpg" alt="Sales Dashboard Analysis" <="" span=""> </span></a>
-								<p>The completion of a dynamic and interactive sales analysis dashboard using Excel formulas and functions only marks a
-									significant achievement. This project showcases the power of Excel in data visualization and analysis, offering a
-									user-friendly experience for navigating through sales data from 2010 to 2017.</p>
-								
-								<p>The interactive features of the dashboard, including select buttons that change based on the selected data such as
-									transactions, revenue, cost of goods sold, and net profit, enhance the visual appeal and usability. Users can easily
-									click on the select button above and the slicer button at the right-hand corner for seamless navigation.</p>
-								
-								<p>The dataset used in this project covers sales data spanning eight years, featuring twelve popular product brands
-									across different regions including Sub-Saharan Africa, Europe, Asia, Middle East and North Africa, Central America
-									and the Caribbean, Australia and Oceania, and North America. The key metrics analyzed in the dashboard include
-									transactions, units sold, revenue, cost of goods sold, and net profit.</p>
-								
-								<p>Through this analysis, key insights have been revealed. The data shows a consistent high volume of transactions trend
-									across Asia, Australia, and Central America and the Caribbean over the past eight years. Each product and region
-									display unique sales patterns, effectively visualized in the dashboard for easy interpretation.</p>
-								
-								<p>The tools utilized in creating this dashboard are Microsoft Excel and Excel functions. The project highlights the
-									importance of Excel functions and formulas in automating and enhancing data visualization, ultimately providing
-									valuable insights into sales trends and performance. Such insights are crucial for making informed business
-									decisions and improving overall business strategies.</p>
-								
-								<p>The completion of this project signifies a milestone in the realm of data analysis and visualization. It not only
-									demonstrates technical proficiency but also emphasizes the importance of utilizing technology for business
-									intelligence. The potential of this dashboard for data visualization and analysis is vast, offering opportunities
-									for further insights and improvements in sales strategies.</p>
-								
-								<p>Feedback and suggestions are welcomed to further enhance the effectiveness of the dashboard. By utilizing innovative
-									tools like Excel and Excel functions, businesses can leverage data analysis to drive growth and success. The link
-									provided allows for a clear online view of the dashboard, inviting users to explore the data visualization
-									firsthand.</p>
-								
-								<p>In conclusion, the completion of the sales analysis dashboard using Excel showcases the power of technology in
-									transforming data into actionable insights. This project serves as a testament to the importance of data
-									visualization and analysis in driving business decisions and enhancing overall performance.</p>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							</article>
-							<article id="work" style="display: none;">
-								<h2 class="major">Profit Analysis for 2019-2020</h2>
-								<a href="https://github.com/cwalton133/Profit_Analysis" target="_blank"> <span class="image main"><img src="./about_files/1719006976185.jpg" alt="Profit Analysis" <="" span=""> </span></a>
-								<p>The deep insight profit analysis for the years 2019, to 2022 delves into various aspects such as identifying
-									top-performing countries, profitable products, customer analysis, and more. The analysis aims to provide a
-									comprehensive understanding of profit generation and factors influencing profitability.</p>
-								
-								<p>One of the key areas of focus is determining the top three countries generating the highest profits in each of the
-									specified years. By analyzing the data, it will be possible to identify the most profitable products in these
-									countries, shedding light on successful market segments and opportunities for growth. Understanding the revenue
-									drivers in different regions is crucial for strategic decision-making and resource allocation.</p>
-								
-								<p>Yearly profit analysis plays a significant role in evaluating product performance based on average costs. By
-									examining profitability trends over time, businesses can identify which products are yielding the highest returns
-									relative to their production costs. This information can guide pricing strategies, production planning, and
-									inventory management to optimize profitability.</p>
-								
-								<p>Exploring monthly profit analysis based on product location distribution is essential for uncovering factors
-									influencing performance variations. By mapping out sales patterns and geographical trends, businesses can adjust
-									marketing strategies, assess demand fluctuations, and tailor distribution channels to enhance profitability.</p>
-								
-								<p>Customer analysis is another critical component of the profit analysis, focusing on identifying the top profitable
-									customers and those with low profitability. By segmenting customers based on their contribution to revenue,
-									businesses can prioritize relationship management, customize marketing efforts, and potentially consider
-									discontinuing low-profit customer relationships.</p>
-								
-								<p>Analyzing the least profitable country in terms of net profit performance provides insights into market challenges
-									and potential opportunities for improvement. Understanding the reasons behind low profitability can help businesses
-									adapt their strategies, explore new market segments.</p>
-								
-								<p>Determining the product cumulative total yielding the highest average profit allows businesses to prioritize product
-									lines with the greatest revenue-generating potential. By focusing resources on high-profit products, businesses can
-									maximize profitability.</p>
-								
-								<p>Finally, identifying the quartile with the highest net profit based on purchasing patterns enables businesses to
-									segment customers according to their spending behavior. By tailoring marketing strategies and service offerings to
-									different customer segments, businesses can improve engagement and profitability.</p>
-								
-								<p>In conclusion, the deep insight profit analysis for the specified years offers valuable insights into profit
-									generation, market trends, and customer behavior. By leveraging Excel features and data modeling techniques,
-									businesses can make informed decisions, optimize profitability, and drive sustainable growth.</p>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							</article>
+        <div class="contact-form-container">
 
-						<!-- About -->
-							<article id="about" style="display: none;">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="file:///C:/Users/MM/Stanley/index_files/stanley.jpg" alt="" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;"></span>
-								<p>
-									Motivated Data Analyst and Data Engineer with over 3+ years of experience in transforming complex data into
-									actionable insights that empower organizations to make informed strategic decisions. I possess a strong foundation
-									in data analysis, visualization, reporting, and automation, utilizing tools such as Excel, Power BI, SQL, and AWS to
-									build efficient data pipelines and data warehouses.
-								</p>
-								<p>
-									Throughout my career, I have successfully developed impactful dashboards and reports that facilitate data-driven
-									decision-making processes. I am experienced in optimizing workflows to improve efficiency, reducing manual efforts
-									through automation, and collaborating seamlessly with cross-functional teams to understand their data needs and
-									deliver tailored solutions.
-								</p>
-								<p>
-									My expertise extends to designing and managing end-to-end data pipelines, ensuring data quality, and automating
-									complex data processes to streamline operations. I am adept at communicating technical findings clearly to
-									stakeholders at all levels, bridging the gap between technical teams and business units.
-								</p>
-								<p>
-									Eager to leverage my analytical skills, cloud computing knowledge, and passion for data to contribute to
-									organizational growth, innovation, and digital transformation. I am committed to continuous learning and applying
-									best practices to deliver value-driven data solutions.
-								</p>
+            <h2>Send Me a Message</h2>
 
-								<div class="close">Close</div>
-								<div class="close">Close</div>
-								<div class="close">Close</div>
-							</article>
+            <form class="contact-form"
+                  action="https://formsubmit.co/st2walton1@gmail.com"
+                  method="POST">
 
-						<!-- Contact -->
-							<article id="contact" style="display: none;">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="https://cwalton133.github.io/cwalton1335.github.io/#">
-									<div class="fields">
-										<div class="field half">
-					
-								<ul class="icons">
-									<li><a href="https://x.com/cwalton1335" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/cwalton133" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/cwalton1335" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				
-								</ul>
-							</div></div></form><div class="close">Close</div>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							</article>
+                <!-- FORM SETTINGS -->
 
-						<!-- Elements -->
-							<article id="elements" style="display: none;">
-								<h2 class="major">Elements</h2>
+                <input type="hidden" name="_captcha" value="false">
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="https://cwalton133.github.io/cwalton1335.github.io/#">this is a link</a>.</p>
-									<hr>
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr>
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+                <input type="hidden"
+                       name="_subject"
+                       value="New Portfolio Contact Message">
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+                <input type="hidden"
+                       name="_template"
+                       value="table">
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+                <input type="hidden"
+                       name="_autoresponse"
+                       value="Thank you for contacting Stanley Walton. Your message has been received successfully.">
 
-								<section>
-									<h3 class="major">Lists</h3>
+                <input type="hidden"
+                       name="_next"
+                       value="https://st2walton1.github.io/stanleywalton/">
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+                <!-- FORM FIELDS -->
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+                <input type="text"
+                       name="name"
+                       placeholder="Your Full Name"
+                       required>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+                <input type="email"
+                       name="email"
+                       placeholder="Your Email Address"
+                       required>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button primary">Default</a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button primary">Default</a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button">Default</a></li>
-									</ul>
-								</section>
+                <input type="text"
+                       name="subject"
+                       placeholder="Subject"
+                       required>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+                <textarea name="message"
+                          rows="6"
+                          placeholder="Write your message here..."
+                          required></textarea>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+                <button type="submit">
+                    Send Message                </button>
+            </form>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button primary">Primary</a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button">Default</a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="https://cwalton133.github.io/cwalton1335.github.io/#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+            <!-- SOCIAL LINKS -->
 
-								<section>
-									<h3 class="major">Form</h3>
-									
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe">
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld">
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked="">
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked="">
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary"></li>
-											<li><input type="reset" value="Reset"></li>
-										</ul>
-									
-								</section>
+            <div class="social-icons">
 
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							<div class="close">Close</div>
-							</article>
+                <a href="https://x.com/cwalton1335" target="_blank">
+                    Twitter                </a>
 
-					</div>
+                <a href="https://github.com/cwalton133" target="_blank">
+                    GitHub                </a>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">© 2026 Stanley Walton. All Rights Reserved.</p>
-			</footer>
-	</div>
+                <a href="https://www.linkedin.com/in/cwalton1335" target="_blank">
+                    LinkedIn                </a>            </div>
+        </div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+        <!-- NAVIGATION -->
 
-		<!-- Scripts -->
-			<script src="./about_files/jquery.min.js.download"></script>
-			<script src="./about_files/browser.min.js.download"></script>
-			<script src="./about_files/breakpoints.min.js.download"></script>
-			<script src="./about_files/util.js.download"></script>
-			<script src="./about_files/main.js.download"></script>
+      <nav>        </nav>
+      <nav class="use-middle">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="intro.html">Intro</a></li>
+          <li class="is-middle"><a href="experience.html">Experience</a></li>
+          <li class="is-middle"><a href="education.html">Education</a></li>
+          <li class="is-middle"><a href="skills.html">SKILLS</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!--<li><a href="#elements">Elements</a></li>-->
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <!--<li><a href="#elements">Elements</a></li>-->
 
-	
+            <footer>© 2026 Stanley Walton. All Rights Reserved.              </footer>
+        </ul>
+      </nav>
+    </header>
+</div>
 
-</body></html>
+</body>
+</html>
