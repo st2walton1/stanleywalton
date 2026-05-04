@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -49,73 +48,36 @@ h1{
     margin-bottom:30px;
 }
 
-/* IMAGE STYLE */
+/* IMAGE STYLE – FULL VISIBILITY, CURVED SIDES ONLY */
 .profile-section img{
-    width:320px;
-    height:380px;
-    object-fit:cover;
+    width:420px;
+    height:auto;
+    max-width:100%;
 
-    /* OVAL SHAPE */
-    border-radius:50%;
+    object-fit:contain;
 
-    /* BOLDER / SHARPER IMAGE */
+    /* SOFT SIDE CURVES (NOT OVAL) */
+    border-radius:28px;
+
     filter:
-    contrast(1.18)
-    brightness(1.05)
-    saturate(1.1)
-    sharpen(1);
+        contrast(1.12)
+        brightness(1.04)
+        saturate(1.05);
 
-    border:5px solid rgba(255,255,255,0.25);
+    border:4px solid rgba(255,255,255,0.22);
 
     box-shadow:
-    0 10px 35px rgba(0,0,0,0.65),
-    0 0 25px rgba(88,166,255,0.2);
+        0 12px 40px rgba(0,0,0,0.7),
+        0 0 30px rgba(88,166,255,0.18);
 
     transition:0.4s ease;
 }
 
 .profile-section img:hover{
-    transform:scale(1.02);
-}
-
-/* NAME DISPLAY BOARD */
-.name-board{
-    display:inline-block;
-
-    margin-top:18px;
-
-    background:linear-gradient(145deg,#0A66C2,#084c94);
-
-    color:white;
-
-    padding:14px 40px;
-
-    border-radius:10px;
-
-    border:2px solid rgba(255,255,255,0.25);
-
-    font-size:34px;
-
-    font-weight:900;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    text-shadow:
-    2px 2px 6px rgba(0,0,0,0.6);
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.45);
+    transform:scale(1.015);
 }
 
 /* TEXT STYLES */
-.style1{
-    text-align:center;
-    font-size:large;
-    margin-bottom:10px;
-}
-
 .style2{
     font-size:x-large;
 }
@@ -125,10 +87,6 @@ h1{
     font-style:italic;
     font-family:Georgia, "Times New Roman", Times, serif;
     color:#58a6ff;
-}
-
-.style4{
-    font-size:large;
 }
 
 /* BUTTON */
@@ -206,53 +164,34 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:768px){
-
     h1{
         font-size:36px;
     }
 
     .profile-section img{
-        width:240px;
-        height:300px;
-    }
-
-    .name-board{
-        font-size:22px;
-        padding:12px 22px;
-        letter-spacing:1px;
-    }
-
-    .style2{
-        font-size:20px;
+        width:100%;
+        border-radius:22px;
     }
 
     .style7{
-        font-size:30px;
+        font-size:28px;
     }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
 <div id="wrapper">
-
 <header id="header">
 
 <h1>INTRODUCTION</h1>
 
 <!-- PROFILE IMAGE -->
 <div class="profile-section">
-
-    <img src="intro_files/Stanley.png" alt="Stanley Walton">
-
-    <br>
-
-    <!-- CLEAR NAME BOARD -->
+    <img src="intro_files/Stanley.png" alt="Stanley Walton – Virtual Assistant at Desk">
 </div>
+
 <p align="center" class="style2">
 <span class="style7">
 Hello, I'm Stanley, Your Virtual Assistant.
@@ -261,17 +200,15 @@ Hello, I'm Stanley, Your Virtual Assistant.
 
 <p align="left" class="style2">
 <br>
-Results-driven and detail-oriented Virtual Assistant with over 3 years of experience providing reliable remote administrative support to entrepreneurs, executives, and growing businesses. Skilled in calendar management, appointment scheduling, email correspondence, customer support, data entry, social media management, and project coordination, with a strong ability to streamline operations and improve productivity. Recognized for exceptional organizational skills, professionalism, and the ability to manage multiple priorities efficiently while delivering high-quality results under tight deadlines.
+Results-driven and detail-oriented Virtual Assistant with over 3 years of experience providing reliable remote administrative support to entrepreneurs, executives, and growing businesses. Skilled in calendar management, appointment scheduling, email correspondence, customer support, data entry, social media management, and project coordination, with a strong ability to streamline operations and improve productivity.
 </p>
-
-<p align="left" class="style2">&nbsp;</p>
 
 <p align="left" class="style2">
-Currently expanding my expertise through advanced training in AI-powered productivity and digital workplace solutions, with growing proficiency in workflow automation, modern collaboration tools, and technology-driven administrative support. Passionate about leveraging innovative tools alongside strong communication, time management, and problem-solving skills to enhance operational efficiency, support business growth, and contribute effectively to dynamic remote teams.
-</p>
-
-<p align="center" class="style2">&nbsp;</p>
-
+<br>
+Currently expanding my expertise through advanced training in AI-powered productivity and digital workplace solutions, with growing proficiency in workflow automation, modern collaboration tools, and technology-driven administrative support.</p>
+<p align="left" class="style2">&nbsp;</p>
+<p align="left" class="style2">Passionate about leveraging innovative tools alongside strong communication, time management, and problem-solving skills to enhance operational efficiency, support business growth, and contribute effectively to dynamic remote teams.</p>
+<p align="left" class="style2">&nbsp;</p>
 <div class="resume-container">
 
 <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf"
@@ -282,52 +219,31 @@ Download Resume
 </a>
 
 <div class="social-icons">
-
-<p>&nbsp;</p>
-
 <p>
 <a href="https://x.com/StanleyWal79099" target="_blank">Twitter</a>
-
 <a href="https://github.com/st2walton1" target="_blank">GitHub</a>
-
 <a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">LinkedIn</a>
 </p>
-
 </div>
 
-<!-- NAVIGATION -->
-<nav class="use-middle">
-
+<nav>
 <ul>
-
 <li><a href="index.html">HOME</a></li>
-
 <li><a href="intro.html">INTRO</a></li>
-
 <li><a href="skills.html">SKILLS</a></li>
-
 <li><a href="experience.html">EXPERIENCE</a></li>
-
 <li><a href="portfolio.html">PORTFOLIO</a></li>
-
 <li><a href="testimonials.html">TESTIMONIALS</a></li>
-
 <li><a href="contact.html">CONTACT</a></li>
-
 </ul>
-
 </nav>
 
 <footer>
 © 2026 Stanley Walton. All Rights Reserved.
 </footer>
 
-</div>
-
 </header>
-
 </div>
 
 </body>
 </html>
-```
