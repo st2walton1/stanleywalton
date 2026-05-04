@@ -1,258 +1,330 @@
+```html id="w6a1pk"
 <!DOCTYPE html>
-<!-- saved from url=(0048)file:///C:/Users/MM/Desktop/Potfolio/skills.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>STANLEY WALTON - Professional Experience</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>STANLEY WALTON - Professional Experience</title>
 
-    <style>
+<style>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background:#0d1117;
-            color:white;
-            line-height:1.6;
-            padding:40px 20px;
-        }
-
-        #wrapper{
-            max-width:1000px;
-            margin:auto;
-        }
-
-        #header{
-            background:rgba(255,255,255,0.04);
-            padding:40px;
-            border-radius:12px;
-            backdrop-filter:blur(8px);
-        }
-
-        h1{
-            text-align:center;
-            font-size:48px;
-            margin-bottom:20px;
-        }
-
-        .intro-text{
-            text-align:center;
-            font-size:18px;
-            margin-bottom:10px;
-        }
-
-        /* TESTIMONIAL CARD */
-        .testimonial-card{
-            display:flex;
-            gap:20px;
-            align-items:center;
-            background:rgba(255,255,255,0.05);
-            padding:25px;
-            border-radius:14px;
-            margin:40px auto;
-            max-width:800px;
-        }
-
-        /* IMAGE STYLE */
-        .testimonial-card img{
-            width:160px;
-            height:160px;
-            object-fit:cover;
-            border-radius:20px;
-            flex-shrink:0;
-            border:2px solid rgba(255,255,255,0.2);
-        }
-
-        /* TEXT AREA */
-        .testimonial-content{
-            flex:1;
-        }
-
-        .testimonial-name{
-            font-size:20px;
-            font-weight:bold;
-            color:#58a6ff;
-            margin-bottom:10px;
-        }
-
-        .testimonial-text{
-            font-size:16px;
-            font-style:italic;
-        }
-
-        /* CONTACT INFO */
-        .contact-info{
-            text-align:center;
-            font-size:16px;
-            margin-top:30px;
-        }
-
-        .contact-info a{
-            color:#58a6ff;
-            text-decoration:none;
-        }
-
-        .contact-info a:hover{
-            text-decoration:underline;
-        }
-
-        /* SOCIAL */
-        .social-icons{
-            text-align:center;
-            margin-top:30px;
-        }
-
-        .social-icons a{
-            margin:0 12px;
-            color:#58a6ff;
-            text-decoration:none;
-        }
-
-        /* NAV */
-        nav ul{
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-            list-style:none;
-            gap:15px;
-            margin-top:30px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            padding:10px 18px;
-            border:1px solid rgba(255,255,255,0.2);
-            border-radius:6px;
-        }
-
-        nav ul li a:hover{
-            background:#0A66C2;
-            border-color:#0A66C2;
-        }
-
-        footer{
-            text-align:center;
-            margin-top:40px;
-            font-size:14px;
-            color:#999;
-        }
-
-        /* RESPONSIVE */
-        @media(max-width:768px){
-
-            .testimonial-card{
-                flex-direction:column;
-                text-align:center;
-            }
-
-            .testimonial-card img{
-                width:140px;
-                height:140px;
-            }
-
-        }
-
-    .style1 {text-align: center; font-size: large; margin-bottom: 10px; }
-    .style2 {font-size: x-large}
-    .resume-btn {display:inline-block;
-        padding:12px 24px;
-        background:#0A66C2;
-        color:white;
-        text-decoration:none;
-        border-radius:6px;
-        font-weight:bold;
-        transition:0.3s ease;
-        margin-top:20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-    .style7 {	font-size: xx-large;
-	font-style: italic;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-    .style4 {font-size: large}
-    .resume-btn1 {            display:inline-flex;
-            align-items:center;
-            justify-content:center;
-            padding:14px 28px;
-            background:#0A66C2;
-            color:white;
-            text-decoration:none;
-            border-radius:8px;
-            font-weight:bold;
-            transition:0.3s ease;
-}
-.resume-container {            text-align:center;
-            margin-bottom:40px;
-}
-    </style>
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d1117;
+    color:white;
+    line-height:1.7;
+    padding:40px 20px;
+}
+
+/* WRAPPER */
+#wrapper{
+    max-width:1050px;
+    margin:auto;
+}
+
+/* MAIN CARD */
+#header{
+    background:rgba(255,255,255,0.04);
+    padding:45px;
+    border-radius:18px;
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+    0 12px 35px rgba(0,0,0,0.45);
+}
+
+/* PAGE TITLE */
+h1{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:35px;
+    letter-spacing:2px;
+}
+
+/* PROFESSIONAL CURVED IMAGE */
+.experience-image{
+    text-align:center;
+    margin:35px 0;
+}
+
+.experience-image img{
+
+    width:460px;
+    height:270px;
+
+    object-fit:cover;
+
+    /* CURVED PROFESSIONAL SHAPE */
+    border-radius:40px;
+
+    /* BOLD EFFECT */
+    filter:
+    contrast(1.3)
+    brightness(1.08)
+    saturate(1.2)
+    drop-shadow(0 0 15px rgba(255,255,255,0.12));
+
+    border:5px solid rgba(255,255,255,0.28);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.75),
+    0 0 30px rgba(88,166,255,0.25);
+
+    transition:0.4s ease;
+}
+
+.experience-image img:hover{
+    transform:scale(1.02);
+}
+
+/* TEXT STYLES */
+.style2{
+    font-size:24px;
+}
+
+/* EXPERIENCE CARD */
+.experience-card{
+
+    background:rgba(255,255,255,0.05);
+
+    padding:28px;
+
+    border-radius:14px;
+
+    margin-top:25px;
+
+    border-left:5px solid #0A66C2;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.35);
+}
+
+.experience-card strong{
+    color:#58a6ff;
+    font-size:28px;
+}
+
+/* BUTTON */
+.resume-container{
+    text-align:center;
+    margin-top:45px;
+}
+
+.resume-btn1{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 32px;
+
+    background:#0A66C2;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.3s ease;
+}
+
+.resume-btn1:hover{
+    background:#084c94;
+    transform:translateY(-3px);
+}
+
+/* SOCIAL LINKS */
+.social-icons{
+    text-align:center;
+    margin-top:35px;
+}
+
+.social-icons a{
+    margin:0 15px;
+    color:#58a6ff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+    color:white;
+}
+
+/* NAVIGATION */
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    list-style:none;
+    gap:15px;
+    margin-top:40px;
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 18px;
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:6px;
+
+    transition:0.3s ease;
+}
+
+nav ul li a:hover{
+
+    background:#0A66C2;
+
+    border-color:#0A66C2;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:50px;
+    font-size:14px;
+    color:#999;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    h1{
+        font-size:36px;
+    }
+
+    .style2{
+        font-size:19px;
+    }
+
+    .experience-image img{
+        width:100%;
+        height:auto;
+        border-radius:25px;
+    }
+
+    .experience-card strong{
+        font-size:22px;
+    }
+
+}
+
+.style1 {font-size: x-large}
+</style>
 </head>
 
 <body>
 
 <div id="wrapper">
 
-    <header id="header">
+<header id="header">
 
-        <h1>PROFESSIONAL EXPERIENCE</h1>
-        <p align="left">&nbsp;</p>
-        <p class="style2">Dedicated Virtual Assistant and Administrative Support Professional with experience providing organized, efficient, and reliable support to businesses and professionals. Skilled in email management, scheduling, customer support, data entry, communication, and digital tools that improve workflow and productivity.</p>
-        <p class="style2">Below is an overview of my professional experience and contributions across administrative and virtual support roles.</p>
-        <p class="style2">&nbsp;</p>
-        <p class="style2"><strong>Waltech Computer Engineering Ltd.</strong><br>
-          Virtual Assistant.<br>
-        Jan 2023 – Till Date.</p>
-        <p class="style2">&nbsp;</p>
-        <p class="style2"><strong>First Royal Exchange Ltd.</strong><br>
-          Customer Service Representative.<br>
-        Feb 2024 – Jun 2025.</p>
-        <p align="center">&nbsp;</p>
-        <p align="center">&nbsp;</p>
-        <p align="center" class="style2">&nbsp;</p>
-        <div class="resume-container"> <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="resume-btn1" download=""> Download Resume </a>
-          <div class="social-icons">
-            
-            <p>&nbsp;</p>
-            <p><a href="https://x.com/StanleyWal79099" target="_blank">Twitter</a>
-              <a href="https://github.com/st2walton1" target="_blank">GitHub</a>
-              <a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">LinkedIn</a></p>
-          </div>
-          <!-- NAV -->
-          <nav>          </nav>
-          <nav class="use-middle">
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="intro.html">INTRO</a></li>
-              <li class="is-middle"><a href="skills.html">SKILLS</a></li>
-              <li class="is-middle"><a href="experience.html">EXPERIENCE</a></li>
-              <li class="is-middle"><a href="portfolio.html">PORTFOLIO</a></li>
-              <li><a href="testimonials.html">TESTIMONIALS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-              <!--<li><a href="#elements">Elements</a></li>-->
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li></li>
-            </ul>
-          </nav>
-          <nav></nav>
-          <nav>
-            <ul>
-              <li></li>
-            </ul>
-          </nav>
+<h1>PROFESSIONAL EXPERIENCE</h1>
 
-          <footer>
-            © 2026 Stanley Walton. All Rights Reserved.        </footer>
-    </div>
-        </header>
+<p class="style2">
+
+Dedicated Virtual Assistant and Administrative Support Professional with experience providing organized, efficient, and reliable support to businesses and professionals. Skilled in email management, scheduling, customer support, data entry, communication, and digital tools that improve workflow and productivity.</p>
+
+<br>
+
+<p class="style2">
+
+Below is an overview of my professional experience and contributions across administrative and virtual support roles.</p>
+
+<!-- PROFESSIONAL IMAGE -->
+<div class="experience-image">
+
+  <p><img src="experience_files/experience.png" alt="Professional Experience"></p>
+  <p>&nbsp;  </p>
 </div>
 
+<p>
+  <!-- EXPERIENCE CARD 1 -->
+</p>
+<p align="left"><span class="style1"><strong>Waltech Computer Engineering Ltd.</strong><br>
+  Virtual Assistant. <br>
+  Jan 2023 – Till Date</span>.</p>
+<p align="left" class="style1">
+  Provide reliable remote administrative support, including calendar and email management, customer support assistance, data handling, and task coordination to support daily business operations and improve workflow efficiency.</p>
+<p align="left">&nbsp;</p>
+<p><span class="style1"><strong>First Royal Exchange Ltd.</strong><br>
+  Customer Service Representative. <br>
+  Feb 2024 – Jun 2025.</span></p>
+<p class="style1">Delivered professional customer support by handling inquiries, resolving issues, maintaining accurate records, and consistently meeting service quality and performance standards.</p>
+<p>
+  <!-- EXPERIENCE CARD 2 -->
+  <!-- RESUME BUTTON -->
+</p>
+<div class="resume-container">
 
-</body></html>
+<a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf"
+target="_blank"
+class="resume-btn1"
+download>
+
+Download Resume</a>
+
+<!-- SOCIAL LINKS -->
+<div class="social-icons">
+
+<p style="margin-top:25px;">
+
+<a href="https://x.com/StanleyWal79099" target="_blank">
+
+Twitter</a>
+
+<a href="https://github.com/st2walton1" target="_blank">
+
+GitHub</a>
+
+<a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">
+
+LinkedIn</a></p>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+
+<ul>
+
+<li><a href="index.html">HOME</a></li>
+
+<li><a href="intro.html">INTRO</a></li>
+
+<li><a href="skills.html">SKILLS</a></li>
+
+<li><a href="experience.html">EXPERIENCE</a></li>
+
+<li><a href="portfolio.html">PORTFOLIO</a></li>
+
+<li><a href="testimonials.html">TESTIMONIALS</a></li>
+
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+<footer>
+
+© 2026 Stanley Walton. All Rights Reserved.</footer>
+</div>
+</header>
+</div>
+
+</body>
+</html>
+```
