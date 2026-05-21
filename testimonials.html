@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)https://st2walton1.github.io/stanleywalton/index.html -->
 <html lang="en">
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P2X15H4QG"></script>
@@ -31,114 +30,244 @@ gtag('config', 'G-9P2X15H4QG');
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:#0d1117;
-    color:white;
-    line-height:1.6;
+    color:#ffffff;
+    line-height:1.7;
     padding:40px 20px;
 }
 
+/* BACKGROUND GLOW */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:rgba(10,102,194,0.12);
+    border-radius:50%;
+    top:-200px;
+    right:-150px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:rgba(88,166,255,0.08);
+    border-radius:50%;
+    bottom:-150px;
+    left:-100px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
 #wrapper{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
 }
 
 #header{
     background:rgba(255,255,255,0.04);
-    padding:40px;
-    border-radius:12px;
-    backdrop-filter:blur(8px);
+    padding:45px;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
 }
 
-h1{
-    text-align:center;
-    font-size:48px;
+/* HERO */
+
+.hero-badge{
+    display:inline-block;
+    background:rgba(88,166,255,0.12);
+    border:1px solid rgba(88,166,255,0.25);
+    color:#58a6ff;
+    padding:10px 20px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
     margin-bottom:20px;
 }
 
-.intro-text{
+.hero-section{
     text-align:center;
-    font-size:18px;
-    margin-bottom:10px;
+    margin-bottom:50px;
 }
 
-/* TESTIMONIAL CARD */
+.hero-section h1{
+    font-size:56px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
 
-.testimonial-card,
-.testimonial-card1,
-.testimonial-card2{
+.hero-section p{
+    max-width:850px;
+    margin:auto;
+    color:#d0d7de;
+    font-size:20px;
+}
+
+/* TESTIMONIAL CARDS */
+
+.testimonial-card{
     display:flex;
-    gap:20px;
-    align-items:center;
+    gap:25px;
+    align-items:flex-start;
     background:rgba(255,255,255,0.05);
-    padding:25px;
-    border-radius:14px;
-    margin:40px auto;
-    max-width:800px;
+    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:22px;
+    margin-bottom:35px;
+    transition:0.4s ease;
 }
 
-/* ALL TESTIMONIAL IMAGES */
+.testimonial-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(88,166,255,0.4);
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
 
-.testimonial-card img,
-.testimonial-card1 img,
-.testimonial-card2 img{
-    width:160px;
-    height:160px;
+.testimonial-card img{
+    width:170px;
+    height:170px;
     object-fit:cover;
-    border-radius:25px;
-    border:2px solid rgba(255,255,255,0.2);
+    border-radius:24px;
+    border:3px solid rgba(255,255,255,0.12);
     flex-shrink:0;
 }
 
-/* TEXT AREA */
-
-.testimonial-content,
-.testimonial-content1,
-.testimonial-content2{
+.testimonial-content{
     flex:1;
 }
 
-.testimonial-name{
-    font-size:20px;
-    font-weight:bold;
+.quote-icon{
+    font-size:45px;
     color:#58a6ff;
+    line-height:1;
     margin-bottom:10px;
 }
 
+.testimonial-name{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:6px;
+    color:#58a6ff;
+}
+
+.testimonial-role{
+    color:#d0d7de;
+    font-size:15px;
+    margin-bottom:18px;
+}
+
 .testimonial-text{
-    font-size:16px;
-    font-style:italic;
+    font-size:17px;
+    color:#f5f5f5;
 }
 
-/* CONTACT INFO */
-
-.contact-info{
-    text-align:center;
-    font-size:16px;
-    margin-top:30px;
+.testimonial-text p{
+    margin-top:15px;
 }
 
-.contact-info a{
+.verify-link{
+    display:inline-block;
+    margin-top:18px;
     color:#58a6ff;
     text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:0.3s ease;
 }
 
-.contact-info a:hover{
-    text-decoration:underline;
+.verify-link:hover{
+    color:white;
+}
+
+/* TRUST SECTION */
+
+.trust-section{
+    margin-top:60px;
+    padding:35px;
+    background:rgba(255,255,255,0.04);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.08);
+    text-align:center;
+}
+
+.trust-section h2{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.trust-section p{
+    max-width:800px;
+    margin:auto;
+    color:#d0d7de;
+    font-size:18px;
+}
+
+/* CTA */
+
+.cta-box{
+    margin-top:50px;
+    text-align:center;
+    padding:40px;
+    border-radius:24px;
+    background:linear-gradient(135deg, rgba(10,102,194,0.18), rgba(88,166,255,0.08));
+    border:1px solid rgba(88,166,255,0.2);
+}
+
+.cta-box h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.cta-box p{
+    color:#d0d7de;
+    font-size:18px;
+    max-width:720px;
+    margin:auto auto 25px;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:#0A66C2;
+    color:white;
+    text-decoration:none;
+    padding:15px 32px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.cta-btn:hover{
+    background:#084298;
+    transform:translateY(-3px);
 }
 
 /* SOCIAL */
 
 .social-icons{
     text-align:center;
-    margin-top:30px;
+    margin-top:45px;
 }
 
 .social-icons a{
     margin:0 12px;
     color:#58a6ff;
     text-decoration:none;
+    transition:0.3s ease;
+    font-weight:bold;
 }
 
 .social-icons a:hover{
@@ -153,71 +282,36 @@ nav ul{
     flex-wrap:wrap;
     list-style:none;
     gap:15px;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 nav ul li a{
     color:white;
     text-decoration:none;
-    padding:10px 18px;
-    border:1px solid rgba(255,255,255,0.2);
-    border-radius:6px;
+    padding:12px 22px;
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:10px;
     transition:0.3s ease;
+    background:rgba(255,255,255,0.03);
 }
 
 nav ul li a:hover{
     background:#0A66C2;
     border-color:#0A66C2;
+    transform:translateY(-2px);
 }
+
+/* FOOTER */
 
 footer{
     text-align:center;
-    margin-top:40px;
+    margin-top:55px;
+    color:#9ba3af;
     font-size:14px;
-    color:#999;
+    line-height:1.9;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-    .testimonial-card,
-    .testimonial-card1,
-    .testimonial-card2{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .testimonial-card img,
-    .testimonial-card1 img,
-    .testimonial-card2 img{
-        width:140px;
-        height:140px;
-    }
-
-}
-
-.style1{
-    text-align:center;
-    font-size:large;
-    margin-bottom:10px;
-}
-
-.style2{
-    font-size:x-large;
-}
-
-.style4{
-    font-size:16px;
-    font-style:italic;
-    color:#FFFFFF;
-}
-
-.style5{
-    font-size:20px;
-}
-
-/* Sticky Mobile Hire Me Button */
+/* STICKY BUTTON */
 
 .sticky-hire-btn{
     position:fixed;
@@ -230,7 +324,7 @@ footer{
     text-decoration:none;
     font-size:16px;
     font-weight:bold;
-    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    box-shadow:0 8px 20px rgba(0,0,0,0.35);
     z-index:9999;
     transition:0.3s ease;
 }
@@ -240,7 +334,45 @@ footer{
     transform:translateY(-3px);
 }
 
-/* Hide Sticky Button on Desktop */
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px 15px;
+    }
+
+    #header{
+        padding:28px;
+    }
+
+    .hero-section h1{
+        font-size:40px;
+    }
+
+    .hero-section p{
+        font-size:17px;
+    }
+
+    .testimonial-card{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+    .testimonial-card img{
+        width:140px;
+        height:140px;
+    }
+
+    .testimonial-name{
+        font-size:22px;
+    }
+
+    .cta-box h2{
+        font-size:30px;
+    }
+}
 
 @media (min-width:768px){
 
@@ -249,8 +381,18 @@ footer{
     }
 }
 
+.hero-badge1 {    display:inline-block;
+    background:rgba(88,166,255,0.12);
+    border:1px solid rgba(88,166,255,0.25);
+    color:#58a6ff;
+    padding:10px 20px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
 </style>
-
 </head>
 
 <body>
@@ -259,15 +401,17 @@ footer{
 
 <header id="header">
 
-<h1>TESTIMONIALS</h1>
+<!-- HERO SECTION -->
 
-<p class="style2">
-
-The testimonials below reflect feedback from clients and collaborators who have worked with me across various virtual assistance, administrative, and communication tasks. Each review highlights my ability to deliver organized, efficient, and reliable support while maintaining strong attention to detail and professionalism.
-
+<div class="hero-section">
+  <h1>TESTIMONIALS</h1>
+  <div class="hero-badge1"> CLIENT TESTIMONIALS & PROFESSIONAL FEEDBACK </div>
+  <h1>Trusted By Professionals & Business Leaders</h1>
+<p>
+These testimonials reflect the quality of support, professionalism, communication, and reliability I bring to every project. From administrative support to AI-powered productivity and customer engagement, I focus on helping businesses stay organized, efficient, and growth-focused.
 </p>
 
-<p align="left" class="style1">&nbsp;</p>
+</div>
 
 <!-- TESTIMONIAL 1 -->
 
@@ -277,27 +421,27 @@ The testimonials below reflect feedback from clients and collaborators who have 
 
 <div class="testimonial-content">
 
+<div class="quote-icon">“</div>
+
 <div class="testimonial-name">
+Ilonze Chizoba Esther
+</div>
 
-Ilonze Chizoba Esther -
-
-<span class="style4">
+<div class="testimonial-role">
 AI Training Specialist at VSavvy Academy
-</span>
-
 </div>
 
 <div class="testimonial-text">
 
-“I highly recommend Stanley for administrative support and communication roles. He is extremely organized, reliable, and skilled at helping businesses stay productive. His ability to manage tasks efficiently and communicate clearly makes him a great asset to any team.”
+Stanley is highly organized, dependable, and professional in handling administrative support and communication tasks. His ability to manage workflows efficiently, communicate clearly, and stay detail-oriented makes him a valuable asset to any business or team environment.
 
 </div>
 
 <a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
 target="_blank"
-style="font-size:12px; color:#58a6ff; text-decoration:none;">
+class="verify-link">
 
-✔ Verified LinkedIn Recommendation · View source
+✔ Verified LinkedIn Recommendation
 
 </a>
 
@@ -307,33 +451,33 @@ style="font-size:12px; color:#58a6ff; text-decoration:none;">
 
 <!-- TESTIMONIAL 2 -->
 
-<div class="testimonial-card1">
+<div class="testimonial-card">
 
 <img src="testimonials_files/Herriel Foods.jpg" alt="Gabriel Ohworuka">
 
-<div class="testimonial-content1">
+<div class="testimonial-content">
+
+<div class="quote-icon">“</div>
 
 <div class="testimonial-name">
+Gabriel Ohworuka
+</div>
 
-Gabriel Ohworuka -
-
-<span class="style4">
+<div class="testimonial-role">
 CEO at Herriel Foods
-</span>
-
 </div>
 
 <div class="testimonial-text">
 
-“Stanley Walton is the definition of a high-impact Virtual Assistant. I brought him on to help streamline my daily operations, and he exceeded every expectation. He is incredibly organized, proactive, and has an uncanny ability to anticipate needs before they are even voiced. His proficiency with digital tools and his get-it-done attitude have saved me countless hours. If you are looking for a Virtual Assistant who is as reliable as they are skilled, I highly recommend Stanley Walton.”
+Stanley Walton consistently demonstrated initiative, professionalism, and strong organizational skills while supporting daily operations. His proactive mindset, digital proficiency, and ability to anticipate needs significantly improved productivity and workflow efficiency across multiple business activities.
 
 </div>
 
 <a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
 target="_blank"
-style="font-size:12px; color:#58a6ff; text-decoration:none;">
+class="verify-link">
 
-✔ Verified LinkedIn Recommendation · View source
+✔ Verified LinkedIn Recommendation
 
 </a>
 
@@ -343,41 +487,37 @@ style="font-size:12px; color:#58a6ff; text-decoration:none;">
 
 <!-- TESTIMONIAL 3 -->
 
-<div class="testimonial-card2">
+<div class="testimonial-card">
 
 <img src="testimonials_files/Charles Walton.jpg" alt="Charles Walton">
 
-<div class="testimonial-content2">
+<div class="testimonial-content">
+
+<div class="quote-icon">“</div>
 
 <div class="testimonial-name">
+Charles Walton
+</div>
 
-Charles Walton -
-
-<span class="style4">
+<div class="testimonial-role">
 AI Certified Customer & Revenue Analytics Consultant
-</span>
-
 </div>
 
 <div class="testimonial-text">
 
-“I had the pleasure of working closely with Stanley Walton on a collaborative project where we developed an Automated Client Engagement & Business Insights Dashboard. Throughout the project, he demonstrated exceptional organizational skills, attention to detail, and a proactive approach to managing project workflows, schedules, and communications.
+I had the opportunity to collaborate with Stanley Walton on the development of an Automated Client Engagement & Business Insights Dashboard. Throughout the project, he demonstrated exceptional organizational abilities, communication skills, and professionalism in managing workflows, stakeholder coordination, customer support, and project documentation.
 
-<p>&nbsp;</p>
-
-Stanley Walton expertly handled digital marketing efforts, coordinated with stakeholders, and ensured all documentation and customer support tasks were efficiently managed. His tech-savviness and ability to streamline processes significantly contributed to the project's success.
-
-<p>&nbsp;</p>
-
-I highly recommend Stanley Walton for any organization seeking a dedicated, organized, and tech-savvy professional who can support complex projects with professionalism and precision.”
+<p>
+His ability to combine administrative expertise with modern digital tools contributed greatly to the successful delivery of the project and improved operational efficiency throughout the collaboration.
+</p>
 
 </div>
 
 <a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
 target="_blank"
-style="font-size:12px; color:#58a6ff; text-decoration:none;">
+class="verify-link">
 
-✔ Verified LinkedIn Recommendation · View source
+✔ Verified LinkedIn Recommendation
 
 </a>
 
@@ -385,11 +525,41 @@ style="font-size:12px; color:#58a6ff; text-decoration:none;">
 
 </div>
 
+<!-- TRUST SECTION -->
+
+<div class="trust-section">
+
+<h2>
+Professionalism • Reliability • Productivity
+</h2>
+
+<p>
+I am committed to delivering dependable administrative support, effective communication, organized workflows, and AI-assisted productivity solutions that help businesses operate more efficiently and professionally.
+</p>
+
+</div>
+
+<!-- CTA -->
+
+<div class="cta-box">
+
+<h2>
+Let’s Work Together
+</h2>
+
+<p>
+If you are looking for a reliable Administrative & Executive Virtual Assistant who can support operations, communication, organization, and digital productivity, I would be glad to support your business goals.
+</p>
+
+<a href="contact.html" class="cta-btn">
+Hire Me
+</a>
+
+</div>
+
 <!-- SOCIAL -->
 
 <div class="social-icons">
-
-<p>
 
 <a href="https://x.com/StanleyWal79099" target="_blank">
 Twitter
@@ -403,11 +573,9 @@ GitHub
 LinkedIn
 </a>
 
-</p>
-
 </div>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
 
 <nav class="use-middle">
 
@@ -421,9 +589,9 @@ LinkedIn
 
 <li><a href="experience.html">EXPERIENCE</a></li>
 
-<li><a href="testimonials.html">TESTIMONIALS</a></li>
-
 <li><a href="portfolio.html">PORTFOLIO</a></li>
+
+<li><a href="testimonials.html">TESTIMONIALS</a></li>
 
 <li><a href="contact.html">CONTACT</a></li>
 
@@ -431,22 +599,20 @@ LinkedIn
 
 </nav>
 
+<!-- FOOTER -->
+
 <footer>
 
 <p align="center">
 
-Stanley Walton — AI-Assisted Administrative & Executive Virtual Assistant focused on productivity, organization, business support, and professional digital solutions.
+Stanley Walton — AI-Assisted Administrative & Executive Virtual Assistant focused on productivity, organization, business support, communication, and professional digital solutions.
 
 </p>
 
-<p align="left">&nbsp;</p>
-
-<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
 
 <p>
-
 © 2026 Stanley Walton. All Rights Reserved.
-
 </p>
 
 </footer>
