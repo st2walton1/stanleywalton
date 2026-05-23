@@ -1,0 +1,6 @@
+Build a responsive high earned tech and digital solutions portfolio homepage using React and Tailwind CSS. Use matte balck and white inspired by high earned recuiters and high earned IT high paying institutionalized global companies globally. Name Stanley Walton 
+
+
+
+Build a responsive luxury e-commerce homepage using React and Tailwind CSS. Use imperial black, matte black, gold, and midnight blue with andinkra Akan symbols aesthetics inspired by premium African royalty. Include hero section, product showcase, testimonials, and mobile responsiveness.
+Company name: SWEETCH

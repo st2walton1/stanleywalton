@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stanley Walton | AI-Powered Administrative & Executive Virtual Assistant</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+/* ================= MOBILE HIRE BUTTON ================= */
+
+.mobile-hire-btn{
+    display:none;
+}
+
+@media(max-width:768px){
+
+.mobile-hire-btn{
+    display:block;
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#2563eb;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 0 25px rgba(37,99,235,0.4);
+    z-index:9999;
+    transition:0.3s ease;
+}
+
+.mobile-hire-btn:hover{
+    background:#1d4ed8;
+}
+
+}
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ================= BACKGROUND ================= */
+
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:-1;
+}
+
+/* ================= GLOBAL ================= */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+section{
+    padding:110px 0;
+}
+
+.section-tag{
+    color:#3b82f6;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    margin-bottom:20px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.section-title{
+    font-size:4rem;
+    font-weight:900;
+    line-height:1.2;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+
+.section-text{
+    color:#cbd5e1;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.btn{
+    display:inline-block;
+    padding:17px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.3);
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.15);
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:white;
+    color:black;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.85);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    width:75px;
+    height:auto;
+    object-fit:contain;
+}
+
+.logo-text h1{
+    font-size:2rem;
+    font-weight:900;
+    letter-spacing:1px;
+    color:white;
+}
+
+.logo-text span{
+    color:#3b82f6;
+}
+
+.logo-text p{
+    color:#94a3b8;
+    font-size:11px;
+    letter-spacing:3px;
+    margin-top:4px;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+    transition:0.4s;
+}
+
+.nav-links a:hover{
+    color:#3b82f6;
+}
+
+.menu-btn{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,0.95),
+    rgba(0,0,0,0.72)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    padding-top:140px;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-content h4{
+    color:#3b82f6;
+    letter-spacing:5px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    line-height:1.1;
+    margin-bottom:30px;
+    font-weight:900;
+    text-transform:uppercase;
+}
+
+.hero-content h1 span{
+    color:#3b82f6;
+}
+
+
+.hero-content p{
+    color:#d1d5db;
+    line-height:1.9;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-image{
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    filter:drop-shadow(0 0 35px rgba(37,99,235,0.4));
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    transition:0.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+}
+
+.stat-card h2{
+    font-size:3rem;
+    color:#3b82f6;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#cbd5e1;
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:35px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.skills{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.skill-box{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:25px;
+}
+
+.skill-box h4{
+    margin-bottom:10px;
+    color:#3b82f6;
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:linear-gradient(to bottom right,#0a0a0a,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:40px;
+    transition:0.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    border-color:#2563eb;
+}
+
+.service-icon{
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.service-card h3{
+    font-size:1.6rem;
+    margin-bottom:18px;
+}
+
+.service-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.timeline{
+    position:relative;
+    margin-top:60px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:20px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:rgba(255,255,255,0.15);
+}
+
+.timeline-item{
+    position:relative;
+    margin-left:70px;
+    margin-bottom:40px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+}
+
+.timeline-item::before{
+    content:'';
+    position:absolute;
+    left:-58px;
+    top:35px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#3b82f6;
+}
+
+.timeline-item h3{
+    margin-bottom:12px;
+    font-size:1.6rem;
+}
+
+.timeline-item span{
+    color:#3b82f6;
+    display:block;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:40px;
+}
+
+.stars{
+    color:#3b82f6;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#d1d5db;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.testimonial-card h4{
+    color:#3b82f6;
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:60px;
+}
+
+.contact-box{
+    background:linear-gradient(to right,#0a0a0a,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:40px;
+    padding:60px;
+}
+
+.contact-box h2{
+    font-size:3rem;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+
+.contact-box p{
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.contact-details{
+    margin-top:30px;
+}
+
+.contact-details div{
+    margin-bottom:18px;
+    color:#d1d5db;
+}
+
+.contact-details strong{
+    color:#3b82f6;
+}
+
+.contact-form{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:40px;
+    padding:50px;
+}
+
+.contact-form h3{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:18px 20px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.08);
+    background:#0b0b0b;
+    color:white;
+    outline:none;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+}
+
+.form-group textarea{
+    min-height:170px;
+    resize:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:#2563eb;
+}
+
+.contact-form button{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    border-top:1px solid rgba(255,255,255,0.08);
+    padding:40px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.footer-logo img{
+    width:55px;
+}
+
+.footer-logo h2{
+    font-size:1.6rem;
+}
+
+.footer-logo span{
+    color:#3b82f6;
+}
+
+.footer-content p{
+    color:#94a3b8;
+}
+
+.footer-links{
+    display:flex;
+    gap:20px;
+}
+
+.footer-links a{
+    color:#94a3b8;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.footer-links a:hover{
+    color:#3b82f6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+.hero-grid,
+.about-grid,
+.services-grid,
+.testimonials-grid,
+.stats,
+.contact-wrapper{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+    display:none;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.hero-grid,
+.about-grid,
+.services-grid,
+.testimonials-grid,
+.stats,
+.skills,
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:3.2rem;
+}
+
+.section-title,
+.contact-box h2{
+    font-size:2.3rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero-image img{
+    max-width:350px;
+}
+
+.timeline-item{
+    margin-left:50px;
+}
+
+.contact-box,
+.contact-form{
+    padding:35px;
+}
+
+}
+
+.verify-link{
+    display:inline-block;
+    margin-top:18px;
+    color:#58a6ff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.verify-link:hover{
+    color:white;
+}
+
+.btn1 {    display:inline-block;
+    padding:17px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+}
+.hero-buttons1 {    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.primary-btn1 {    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.3);
+}
+.btn2 {    display:inline-block;
+    padding:17px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+}
+.hero-buttons2 {    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.primary-btn2 {    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.3);
+}
+.style1 {
+	color: #3b82f6;
+	font-style: italic;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo-area">
+
+<img src="logo.png" alt="Stanley Walton Logo">
+
+<div class="logo-text">
+<h1>Stanley <span>Walton</span></h1>
+<p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
+</div>
+
+</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#experience">Experience</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="menu-btn">☰</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div class="hero-content">
+
+<h4>AI-POWERED DIGITAL OPERATIONS</h4>
+
+<h1>
+Administrative &<br>
+<span>Executive Virtual Assistant</span>
+</h1>
+
+<p>
+Results-driven Virtual Assistant and Administrative Support Professional
+experienced in streamlining operations, managing communications,
+coordinating workflows, and supporting business productivity
+through modern digital tools and organized administrative systems.
+</p>
+
+<div class="hero-buttons">
+
+<a href="mailto:st2walton1@gmail.com" target="_blank" class="btn primary-btn">
+Hire Me</a>
+
+<a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn" download>
+Download Resume</a></div>
+
+
+<div class="hero-buttons">
+
+<a href="mailto:st2walton1@gmail.com" target="_blank" class="btn primary-btn">
+Hire Me</a>
+
+<a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn" download>
+Download Resume</a>
+
+</div>
+
+<a href="mailto:st2walton1@gmail.com"
+target="_blank"
+class="mobile-hire-btn">
+📩 Hire Me
+</a>
+<div class="stats">
+
+<div class="stat-card">
+<h2>3+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-card">
+<h2>100%</h2>
+<p>Professional Support</p>
+</div>
+
+<div class="stat-card">
+<h2>24/7</h2>
+<p>Remote Assistance</p>
+</div>
+
+<div class="stat-card">
+<h2>AI</h2>
+<p>Productivity Systems</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="logo.png" alt="Stanley Walton">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="pics.png" alt="Stanley Walton">
+
+</div>
+
+<div>
+
+<div class="section-tag">
+ABOUT ME
+</div>
+
+<h2 class="section-title">
+AI-powered Administrative & Executive Virtual Assistant
+</h2>
+
+<p class="section-text">
+Experienced in administrative operations, customer communication,
+digital organization, scheduling, workflow coordination,
+and AI-assisted productivity tools that support efficient business
+management and professional collaboration.
+</p>
+
+<div class="skills">
+
+<div class="skill-box">
+<h4>Email & Communication</h4>
+<p>Professional email handling, inbox organization, and communication coordination.</p>
+</div>
+
+<div class="skill-box">
+<h4>Calendar Management</h4>
+<p>Meeting scheduling, appointment coordination, and executive planning.</p>
+</div>
+
+<div class="skill-box">
+<h4>Customer Support</h4>
+<p>Client communication, issue resolution, and professional service delivery.</p>
+</div>
+
+<div class="skill-box">
+<h4>AI Productivity Tools</h4>
+<p>Modern AI-powered workflow management and productivity optimization.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-tag">
+SERVICES
+</div>
+
+<h2 class="section-title">
+Virtual Assistance Solutions
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<div class="service-icon">📧</div>
+
+<h3>Email Management</h3>
+
+<p>
+Professional inbox organization, email responses,
+follow-up coordination, and communication management.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">📅</div>
+
+<h3>Executive Support</h3>
+
+<p>
+Calendar scheduling, appointment coordination,
+meeting organization, and administrative assistance.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">🤖</div>
+
+<h3>AI Productivity Support</h3>
+
+<p>
+AI-assisted workflows, productivity systems,
+and digital business operations support.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-tag">
+PROFESSIONAL EXPERIENCE
+</div>
+
+<h2 class="section-title">
+Career Experience
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Virtual Assistant</h3>
+
+<span>Waltech Computer Engineering Ltd. | January 2023 – Present</span>
+
+<p class="section-text">
+Provide reliable remote administrative support including
+calendar management, email organization, customer support assistance,
+digital documentation, task coordination, and workflow management
+to improve operational efficiency and business productivity.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Customer Service Representative</h3>
+
+<span>First Royal Exchange Ltd. | February 2024 – June 2025</span>
+
+<p class="section-text">
+Delivered professional customer support by responding to inquiries,
+resolving client concerns, maintaining accurate service records,
+and ensuring excellent customer satisfaction while meeting
+organizational performance standards.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section id="testimonials">
+
+<div class="container">
+
+<div class="section-tag">
+TESTIMONIALS
+</div>
+
+<h2 class="section-title">
+What Clients Say
+</h2>
+
+<div class="testimonials-grid">
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+Stanley is highly organized, dependable, and professional in handling administrative support and communication tasks. His ability to manage workflows efficiently, communicate clearly, and stay detail-oriented makes him a valuable asset to any business or team environment.
+</p>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
+target="_blank"
+class="verify-link">✔ Verified LinkedIn Recommendation</a>
+
+<h4 style="margin-top:20px;">Business Client</h4>
+<p>Ilonze Chizoba Esther - <em>AI Training Specialist at VSavvy Academy</em></p>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+Stanley Walton consistently demonstrated initiative, professionalism, and strong organizational skills while supporting daily operations. His proactive mindset, digital proficiency, and ability to anticipate needs significantly improved productivity and workflow efficiency.
+</p>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
+target="_blank"
+class="verify-link">✔ Verified LinkedIn Recommendation</a>
+
+<h4 style="margin-top:20px;">Executive Client</h4>
+<p>Gabriel Ohworuka - <em>CEO at Herriel Foods</em></p>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+I had the opportunity to collaborate with Stanley Walton on the development of an Automated Client Engagement & Business Insights Dashboard. His professionalism and workflow coordination contributed significantly to project success.
+</p>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/"
+target="_blank"
+class="verify-link">✔ Verified LinkedIn Recommendation</a>
+
+<h4 style="margin-top:20px;">Remote Employer</h4>
+<p>Charles Walton - <em>AI Certified Customer & Revenue Analytics Consultant</em></p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-tag">
+CONTACT
+</div>
+
+<h2 class="section-title">
+Let's Work Together
+</h2>
+
+<div class="contact-wrapper">
+
+<div class="contact-box">
+
+<h2>Get In Touch</h2>
+
+<p>
+Looking for a reliable AI-powered Administrative &
+Executive Virtual Assistant to support your operations,
+communication systems, productivity workflows,
+and business organization? Let's connect.
+</p>
+
+<div class="contact-details">
+
+<div>
+<strong><div class="contact-details">
+
+<div>
+<i style="color:#3b82f6; margin-right:10px;">📧</i>
+<a href="mailto:st2walton1@gmail.com" target="_blank" class="style1">
+st2walton1@gmail.com</a></div>
+
+<div>
+<i style="color:#3b82f6; margin-right:10px;">💼</i>
+<a href="https://linkedin.com/in/stanley-walton-08a774396"
+target="_blank"
+class="style1">
+linkedin.com/in/stanley-walton-08a774396
+</a>
+</div>
+
+<div>
+<i style="color:#3b82f6; margin-right:10px;">📍</i>
+<span style="color:#d1d5db;">Lagos, Nigeria</span>
+</div>
+
+</div></a></div>
+
+<div>
+  <p>&nbsp;</p>
+  </div>
+
+</div>
+
+<div class="hero-buttons2"> <a href="mailto:st2walton1@gmail.com" target="_blank" class="btn primary-btn"> Hire Me </a> <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn" download> Download Resume </a> </div>
+</div>
+
+<div class="contact-form">
+
+<h3>Send A Message</h3>
+
+<form action="https://formsubmit.co/st2walton1@gmail.com" method="POST">
+
+<div class="form-group">
+<input type="text" name="name" placeholder="Your Full Name" required>
+</div>
+
+<div class="form-group">
+<input type="email" name="email" placeholder="Your Email Address" required>
+</div>
+
+<div class="form-group">
+<input type="text" name="subject" placeholder="Subject">
+</div>
+
+<div class="form-group">
+<textarea name="message" placeholder="Write your message here..." required></textarea>
+</div>
+
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit" class="btn primary-btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="hero-buttons1"></div>
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<div class="footer-logo">
+
+<img src="logo.png" alt="Logo">
+
+<div>
+<h2>Stanley <span>Walton</span></h2>
+<p>AI-Powered Executive Virtual Assistant</p>
+</div>
+
+</div>
+
+<div class="footer-links">
+<a href="https://github.com/">GitHub</a>
+<a href="https://linkedin.com/in/stanley-walton-08a774396">LinkedIn</a>
+<a href="mailto:st2walton1@gmail.com">Email</a>
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
