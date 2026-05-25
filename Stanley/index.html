@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Stanley Walton | AI-Powered Executive Virtual Assistant</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -54,7 +58,10 @@ body::after{
     z-index:-1;
 }
 
-/* ================= GLOBAL ================= */
+img{
+    max-width:100%;
+    display:block;
+}
 
 .container{
     width:90%;
@@ -68,11 +75,11 @@ section{
 
 .section-tag{
     color:#3b82f6;
-    text-transform:uppercase;
     letter-spacing:5px;
-    margin-bottom:20px;
+    text-transform:uppercase;
     font-size:13px;
     font-weight:700;
+    margin-bottom:18px;
 }
 
 .section-title{
@@ -80,7 +87,6 @@ section{
     font-weight:900;
     line-height:1.2;
     margin-bottom:25px;
-    text-transform:uppercase;
 }
 
 .section-text{
@@ -91,7 +97,7 @@ section{
 
 .btn{
     display:inline-block;
-    padding:17px 38px;
+    padding:17px 35px;
     border-radius:50px;
     text-decoration:none;
     transition:0.4s;
@@ -101,13 +107,12 @@ section{
 .primary-btn{
     background:#2563eb;
     color:white;
-    box-shadow:0 0 30px rgba(37,99,235,0.4);
+    box-shadow:0 0 30px rgba(37,99,235,0.35);
 }
 
 .primary-btn:hover{
     background:#1d4ed8;
-    transform:translateY(-3px);
-    box-shadow:0 0 45px rgba(37,99,235,0.6);
+    transform:translateY(-4px);
 }
 
 .secondary-btn{
@@ -132,8 +137,8 @@ header{
     top:0;
     left:0;
     z-index:999;
-    backdrop-filter:blur(10px);
     background:rgba(0,0,0,0.88);
+    backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
@@ -151,9 +156,7 @@ nav{
 }
 
 .logo-area img{
-    width:72px;
-    height:auto;
-    object-fit:contain;
+    width:95px;
 }
 
 .logo-text h1{
@@ -169,12 +172,11 @@ nav{
     color:#94a3b8;
     font-size:11px;
     letter-spacing:3px;
-    margin-top:4px;
 }
 
 .nav-links{
     display:flex;
-    gap:35px;
+    gap:28px;
 }
 
 .nav-links a{
@@ -182,7 +184,6 @@ nav{
     text-decoration:none;
     text-transform:uppercase;
     font-size:13px;
-    font-weight:600;
     letter-spacing:2px;
     transition:0.4s;
 }
@@ -193,7 +194,7 @@ nav{
 
 .menu-btn{
     display:none;
-    font-size:32px;
+    font-size:30px;
     cursor:pointer;
 }
 
@@ -210,13 +211,13 @@ nav{
     url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
     background-size:cover;
     background-position:center;
-    padding-top:140px;
+    padding-top:120px;
 }
 
 .hero-grid{
     display:grid;
     grid-template-columns:1.1fr 0.9fr;
-    gap:50px;
+    gap:60px;
     align-items:center;
 }
 
@@ -224,15 +225,13 @@ nav{
     color:#3b82f6;
     letter-spacing:5px;
     margin-bottom:20px;
-    text-transform:uppercase;
 }
 
 .hero-content h1{
     font-size:5rem;
+    font-weight:900;
     line-height:1.1;
     margin-bottom:30px;
-    font-weight:900;
-    text-transform:uppercase;
 }
 
 .hero-content h1 span{
@@ -241,71 +240,32 @@ nav{
 
 .hero-content p{
     color:#d1d5db;
-    line-height:1.9;
     font-size:18px;
+    line-height:1.9;
     margin-bottom:35px;
-    max-width:720px;
 }
 
 .availability{
     display:inline-block;
     padding:12px 22px;
+    border-radius:40px;
     background:rgba(37,99,235,0.12);
     border:1px solid rgba(37,99,235,0.4);
-    border-radius:40px;
     color:#93c5fd;
     margin-bottom:30px;
-    font-size:15px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:20px;
+    gap:18px;
     flex-wrap:wrap;
-}
-
-.hero-image{
-    text-align:center;
 }
 
 .hero-image img{
     width:100%;
-    max-width:500px;
-    filter:drop-shadow(0 0 40px rgba(37,99,235,0.45));
-}
-
-/* ================= STATS ================= */
-
-.stats{
-    margin-top:70px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.stat-card{
-    background:rgba(255,255,255,0.03);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:25px;
-    padding:35px;
-    text-align:center;
-    transition:0.4s;
-}
-
-.stat-card:hover{
-    transform:translateY(-8px);
-    border-color:#2563eb;
-    box-shadow:0 0 30px rgba(37,99,235,0.15);
-}
-
-.stat-card h2{
-    font-size:3rem;
-    color:#3b82f6;
-    margin-bottom:10px;
-}
-
-.stat-card p{
-    color:#cbd5e1;
+    max-width:550px;
+    margin:auto;
+    filter:drop-shadow(0 0 50px rgba(37,99,235,0.45));
 }
 
 /* ================= ABOUT ================= */
@@ -318,10 +278,8 @@ nav{
 }
 
 .about-image img{
-    width:100%;
     border-radius:35px;
     border:1px solid rgba(255,255,255,0.08);
-    box-shadow:0 0 40px rgba(37,99,235,0.12);
 }
 
 .skills{
@@ -334,19 +292,13 @@ nav{
 .skill-box{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
-    border-radius:20px;
+    border-radius:22px;
     padding:25px;
-    transition:0.4s;
-}
-
-.skill-box:hover{
-    transform:translateY(-5px);
-    border-color:#2563eb;
 }
 
 .skill-box h4{
-    margin-bottom:10px;
     color:#3b82f6;
+    margin-bottom:10px;
 }
 
 /* ================= SERVICES ================= */
@@ -355,10 +307,11 @@ nav{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
+    margin-top:60px;
 }
 
 .service-card{
-    background:linear-gradient(to bottom right,#0a0a0a,#111827);
+    background:linear-gradient(to bottom right,#0b0b0b,#111827);
     border:1px solid rgba(255,255,255,0.08);
     border-radius:30px;
     padding:40px;
@@ -368,12 +321,22 @@ nav{
 .service-card:hover{
     transform:translateY(-10px);
     border-color:#2563eb;
-    box-shadow:0 0 35px rgba(37,99,235,0.15);
 }
 
 .service-icon{
-    font-size:55px;
+    width:80px;
+    height:80px;
+    border-radius:22px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    justify-content:center;
+    align-items:center;
     margin-bottom:25px;
+}
+
+.service-icon i{
+    font-size:35px;
+    color:#3b82f6;
 }
 
 .service-card h3{
@@ -392,13 +355,13 @@ nav{
     display:grid;
     grid-template-columns:repeat(5,1fr);
     gap:25px;
-    margin-top:50px;
+    margin-top:60px;
 }
 
 .tool-card{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
-    border-radius:24px;
+    border-radius:25px;
     padding:30px;
     text-align:center;
     transition:0.4s;
@@ -409,9 +372,10 @@ nav{
     border-color:#2563eb;
 }
 
-.tool-card h3{
-    margin-top:15px;
-    font-size:1rem;
+.tool-icon{
+    font-size:50px;
+    color:#3b82f6;
+    margin-bottom:20px;
 }
 
 /* ================= EXPERIENCE ================= */
@@ -439,12 +403,6 @@ nav{
     border:1px solid rgba(255,255,255,0.08);
     border-radius:25px;
     padding:35px;
-    transition:0.4s;
-}
-
-.timeline-item:hover{
-    border-color:#2563eb;
-    box-shadow:0 0 35px rgba(37,99,235,0.12);
 }
 
 .timeline-item::before{
@@ -456,19 +414,17 @@ nav{
     height:18px;
     border-radius:50%;
     background:#3b82f6;
-    box-shadow:0 0 15px #3b82f6;
 }
 
 .timeline-item h3{
     margin-bottom:12px;
-    font-size:1.6rem;
+    font-size:1.5rem;
 }
 
 .timeline-item span{
     color:#3b82f6;
     display:block;
     margin-bottom:15px;
-    font-weight:600;
 }
 
 /* ================= CERTIFICATIONS ================= */
@@ -484,16 +440,21 @@ nav{
     border:1px solid rgba(255,255,255,0.08);
     border-radius:28px;
     padding:35px;
-    transition:0.4s;
 }
 
-.cert-card:hover{
-    transform:translateY(-8px);
-    border-color:#2563eb;
+.cert-icon{
+    width:75px;
+    height:75px;
+    border-radius:20px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
 }
 
-.cert-card h3{
-    margin-bottom:15px;
+.cert-icon i{
+    font-size:34px;
     color:#3b82f6;
 }
 
@@ -510,60 +471,17 @@ nav{
     border:1px solid rgba(255,255,255,0.08);
     border-radius:30px;
     padding:40px;
-    transition:0.4s;
 }
 
-.testimonial-card:hover{
-    border-color:#2563eb;
-    transform:translateY(-6px);
+.quote-icon{
+    font-size:35px;
+    color:#3b82f6;
+    margin-bottom:20px;
 }
 
 .stars{
     color:#3b82f6;
-    font-size:20px;
     margin-bottom:20px;
-}
-
-.testimonial-card p{
-    color:#d1d5db;
-    line-height:1.9;
-    margin-bottom:20px;
-}
-
-.testimonial-card h4{
-    color:#3b82f6;
-    margin-bottom:8px;
-}
-
-.verify-link{
-    display:inline-block;
-    margin-top:10px;
-    color:#60a5fa;
-    text-decoration:none;
-    font-weight:600;
-}
-
-/* ================= CTA ================= */
-
-.recruiter-cta{
-    background:linear-gradient(to right,#0a0a0a,#111827);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:40px;
-    padding:70px;
-    text-align:center;
-}
-
-.recruiter-cta h2{
-    font-size:3.5rem;
-    margin-bottom:25px;
-}
-
-.recruiter-cta p{
-    color:#cbd5e1;
-    max-width:800px;
-    margin:auto;
-    line-height:1.9;
-    margin-bottom:40px;
 }
 
 /* ================= CONTACT ================= */
@@ -576,25 +494,39 @@ nav{
     text-align:center;
 }
 
-.contact-box h2{
-    font-size:4rem;
-    margin-bottom:25px;
-    text-transform:uppercase;
+.contact-form{
+    max-width:850px;
+    margin:40px auto 0;
 }
 
-.contact-box p{
-    color:#cbd5e1;
-    max-width:700px;
-    margin:auto;
-    line-height:1.9;
-    margin-bottom:40px;
-}
-
-.contact-buttons{
-    display:flex;
-    justify-content:center;
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:20px;
-    flex-wrap:wrap;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    color:white;
+}
+
+.contact-form textarea{
+    min-height:170px;
+    resize:none;
+    margin-top:20px;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+    margin-top:25px;
 }
 
 /* ================= FOOTER ================= */
@@ -612,28 +544,6 @@ footer{
     gap:20px;
 }
 
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.footer-logo img{
-    width:55px;
-}
-
-.footer-logo h2{
-    font-size:1.6rem;
-}
-
-.footer-logo span{
-    color:#3b82f6;
-}
-
-.footer-content p{
-    color:#94a3b8;
-}
-
 .footer-links{
     display:flex;
     gap:20px;
@@ -642,11 +552,6 @@ footer{
 .footer-links a{
     color:#94a3b8;
     text-decoration:none;
-    transition:0.4s;
-}
-
-.footer-links a:hover{
-    color:#3b82f6;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -657,10 +562,12 @@ footer{
 .about-grid,
 .services-grid,
 .testimonials-grid,
-.stats,
-.tools-grid,
 .cert-grid{
     grid-template-columns:1fr 1fr;
+}
+
+.tools-grid{
+    grid-template-columns:repeat(3,1fr);
 }
 
 }
@@ -668,7 +575,19 @@ footer{
 @media(max-width:768px){
 
 .nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#050505;
+    flex-direction:column;
+    align-items:center;
+    padding:30px 0;
     display:none;
+}
+
+.nav-links.active{
+    display:flex;
 }
 
 .menu-btn{
@@ -679,47 +598,410 @@ footer{
 .about-grid,
 .services-grid,
 .testimonials-grid,
-.stats,
+.cert-grid,
 .skills,
 .tools-grid,
-.cert-grid{
+.form-grid{
     grid-template-columns:1fr;
-}
-
-.hero-content h1{
-    font-size:3rem;
-}
-
-.section-title,
-.contact-box h2,
-.recruiter-cta h2{
-    font-size:2.2rem;
-}
-
-.hero-buttons,
-.contact-buttons{
-    flex-direction:column;
 }
 
 .hero{
     text-align:center;
 }
 
-.hero-image img{
-    max-width:330px;
+.hero-content h1{
+    font-size:2.8rem;
 }
 
-.timeline-item{
-    margin-left:50px;
+.section-title{
+    font-size:2.3rem;
 }
 
-.recruiter-cta,
+.hero-buttons{
+    flex-direction:column;
+}
+
 .contact-box{
     padding:45px 25px;
 }
 
+.footer-content{
+    flex-direction:column;
+    text-align:center;
 }
 
+}
+
+.verify-link {    display:inline-block;
+    margin-top:10px;
+    color:#60a5fa;
+    text-decoration:none;
+}
+.glow-card1 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card1 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card2 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card2 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card3 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card3 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card4 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card4 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card5 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card5 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card6 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card6 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card7 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card7 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card8 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card8 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card9 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card9 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card10 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card10 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card11 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card11 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card12 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card12 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card13 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card13 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card14 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card14 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card15 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card15 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+.glow-card16 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card16 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:22px;
+    padding:28px;
+    text-align:center;
+    transition:0.4s;
+}
+.tool-icon1 {    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:18px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#60a5fa;
+}
+.cert-card1 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:35px;
+}
+.cert-grid1 {    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.cert-icon1 {    font-size:40px;
+    color:#60a5fa;
+    margin-bottom:20px;
+}
+.glow-card17 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.exp-icon {    font-size:28px;
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+.glow-card18 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.timeline-item1 {    position:relative;
+    margin-left:70px;
+    margin-bottom:35px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+}
+.glow-card19 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.timeline-item2 {    position:relative;
+    margin-left:70px;
+    margin-bottom:35px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+}
+.btn1 {    display:inline-block;
+    padding:17px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+    text-align:center;
+}
+.hero-buttons1 {    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.primary-btn1 {    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.4);
+}
+.availability1 {    display:inline-block;
+    padding:12px 22px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(37,99,235,0.4);
+    border-radius:40px;
+    color:#93c5fd;
+    margin-bottom:30px;
+    font-size:15px;
+}
+.btn2 {    display:inline-block;
+    padding:17px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+}
+.contact-box1 {    background:linear-gradient(to right,#0a0a0a,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:40px;
+    padding:70px;
+    text-align:center;
+}
+.contact-buttons {    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.glow-card20 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.primary-btn2 {    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.4);
+}
+.style2 {color: #cbd5e1}
+.glow-card21 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.stars1 {    color:#3b82f6;
+    margin-bottom:18px;
+}
+.testimonial-card1 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:35px;
+}
+.testimonial-icon {    font-size:35px;
+    color:#60a5fa;
+    margin-bottom:15px;
+}
+.testimonials-grid1 {    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.style4 {
+	color: #FFFFFF;
+	line-height: 1.9;
+	font-size: 17px;
+	font-weight: bold;
+}
+.glow-card22 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.tool-card17 {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:22px;
+    padding:28px;
+    text-align:center;
+    transition:0.4s;
+}
+.tool-icon2 {    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:18px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#60a5fa;
+}
+.tools-grid1 {    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:22px;
+    margin-top:40px;
+}
+.cert-card2 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:35px;
+}
+.glow-card23 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.cert-card3 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:35px;
+}
+.glow-card24 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.availability2 {    display:inline-block;
+    padding:12px 22px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(37,99,235,0.4);
+    border-radius:40px;
+    color:#93c5fd;
+    margin-bottom:30px;
+    font-size:15px;
+}
+.btn3 {    display:inline-block;
+    padding:17px 38px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    font-weight:700;
+}
+.glow-card25 {    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+.hero-buttons2 {    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.hero-grid1 {    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:50px;
+    align-items:center;
+}
+.hero-image1 {    text-align:center;
+}
+.primary-btn3 {    background:#2563eb;
+    color:white;
+    box-shadow:0 0 30px rgba(37,99,235,0.4);
+}
+.stat-card {    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    transition:0.4s;
+}
+.stats {    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.style6 {color: #3b82f6}
+.logo-area1 {    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.logo-area2 {    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.logo-area11 {display:flex;
+    align-items:center;
+    gap:15px;
+}
 </style>
 </head>
 
@@ -732,10 +1014,7 @@ footer{
 <nav>
 
 <div class="logo-area">
-
-<img src="logo.png" alt="Stanley Walton Logo">
-
-<div class="logo-text">
+  <div class="logo-text">
 <h1>Stanley <span>Walton</span></h1>
 <p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
 </div>
@@ -743,6 +1022,7 @@ footer{
 </div>
 
 <div class="nav-links">
+
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
@@ -751,9 +1031,12 @@ footer{
 <a href="#certifications">Certifications</a>
 <a href="#testimonials">Testimonials</a>
 <a href="#contact">Contact</a>
+
 </div>
 
-<div class="menu-btn">☰</div>
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
 
 </nav>
 
@@ -761,82 +1044,42 @@ footer{
 
 </header>
 
+<!-- HOME -->
+
 <section class="hero" id="home">
-
-<div class="container">
-
-<div class="hero-grid">
-
-<div class="hero-content">
-
-<h4>AI-POWERED DIGITAL OPERATIONS</h4>
-
-<h1>
-Administrative &
-<span>Executive Virtual Assistant</span>
-</h1>
-
-<p>
-Helping founders, executives, startups, and remote organizations streamline daily operations through AI-powered administrative support, workflow optimization, executive coordination, customer communication, and digital productivity systems.
-</p>
-
-<div class="availability">
-🟢 Available for Remote Opportunities & Global Collaboration
-</div>
-
-<div class="hero-buttons">
-
-<a href="mailto:st2walton1@gmail.com" class="btn primary-btn">
-Hire Me
-</a>
-
-<a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn">
-Download Resume
-</a>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn primary-btn">
-Recruiter Quick Connect
-</a>
-
-</div>
-
-<div class="stats">
-
-<div class="stat-card glow-card">
-<h2>3+</h2>
-<p>Years Experience</p>
-</div>
-
-<div class="stat-card glow-card">
-<h2>100%</h2>
-<p>Professional Support</p>
-</div>
-
-<div class="stat-card glow-card">
-<h2>24/7</h2>
-<p>Remote Operations</p>
-</div>
-
-<div class="stat-card glow-card">
-<h2>AI</h2>
-<p>Workflow Systems</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="logo.png" alt="Stanley Walton">
-
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="hero-grid1">
+      <div class="hero-content">
+        <h4>AI-POWERED DIGITAL OPERATIONS</h4>
+        <h1> ADMINISTRATIVE &amp; <span class="style6">EXECUTIVE VIRTUAL ASSISTANT</span> </h1>
+        <p> Helping founders, executives, startups, and remote organizations streamline daily operations through AI-powered administrative support, workflow optimization, executive coordination, customer communication, and digital productivity systems. </p>
+        <div class="availability2"> 🟢 Available for Remote Opportunities & Global Collaboration </div>
+        <div class="hero-buttons2"> <a href="mailto:st2walton1@gmail.com" class="btn primary-btn"> Hire Me </a> <a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn"> Download Resume </a> <a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn primary-btn"> Recruiter Quick Connect </a> </div>
+        <div class="stats">
+          <div class="stat-card glow-card">
+            <h2>3+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card glow-card">
+            <h2>100%</h2>
+            <p>Professional Support</p>
+          </div>
+          <div class="stat-card glow-card">
+            <h2>24/7</h2>
+            <p>Remote Operations</p>
+          </div>
+          <div class="stat-card glow-card">
+            <h2>AI</h2>
+            <p>Workflow Systems</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image1"><img src="logo.png" alt="Stanley Walton"></div>
+    </div>
+  </div>
 </section>
+
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -850,38 +1093,35 @@ Recruiter Quick Connect
 
 <div>
 
-<div class="section-tag">
-ABOUT ME
-</div>
+<div class="section-tag">ABOUT ME</div>
 
 <h2 class="section-title">
-AI-Powered Executive Support Professional
-</h2>
+AI-POWERED EXECUTIVE SUPPORT PROFESSIONAL</h2>
 
 <p class="section-text">
-I provide reliable executive virtual assistance and administrative support services designed to improve efficiency, productivity, and communication for businesses and professionals. My experience spans workflow coordination, customer support, AI-assisted operations, documentation systems, scheduling, and digital business support.
+I provide organized, detail-oriented, and AI-powered executive virtual assistance services that improve productivity, communication, and operational efficiency for modern businesses and professionals.
 </p>
 
 <div class="skills">
 
 <div class="skill-box glow-card">
-<h4>Email & Communication Management</h4>
-<p>Inbox organization, professional correspondence, follow-up systems, and communication support.</p>
+<h4><span class="style4">Email &amp; Communication</span></h4>
+<p><span class="section-text">Inbox  organization and professional communication support.</span></p>
 </div>
 
 <div class="skill-box glow-card">
-<h4>Executive Calendar Coordination</h4>
-<p>Meeting scheduling, appointment organization, travel planning, and administrative coordination.</p>
+<h4><span class="style4">Calendar Management</span></h4>
+<p><span class="section-text">Scheduling meetings and coordinating executive activities.</span></p>
 </div>
 
 <div class="skill-box glow-card">
-<h4>Customer & Client Support</h4>
-<p>Professional customer interaction, issue resolution, and relationship management.</p>
+<h4><span class="style4">Customer Support</span></h4>
+<p><span class="section-text">Professional customer interaction and relationship management.</span></p>
 </div>
 
 <div class="skill-box glow-card">
-<h4>AI Productivity Systems</h4>
-<p>AI-powered workflow optimization, automation support, and modern digital productivity operations.</p>
+<h4><span class="style4">AI Workflow Systems</span></h4>
+<p><span class="section-text">AI-powered productivity and automation support systems.</span></p>
 </div>
 
 </div>
@@ -893,55 +1133,102 @@ I provide reliable executive virtual assistance and administrative support servi
 </div>
 
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
 
 <div class="container">
 
-<div class="section-tag">
-SERVICES
-</div>
+<div class="section-tag">SERVICES</div>
 
 <h2 class="section-title">
-Virtual Assistance Solutions
-</h2>
+VIRTUAL ASSISTANCE SOLUTIONS</h2>
 
 <div class="services-grid">
 
 <div class="service-card glow-card">
-<div class="service-icon">📧</div>
+
+<div class="service-icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+
 <h3>Email Management</h3>
-<p>Professional inbox organization, communication handling, follow-up systems, and email workflow support.</p>
+
+<p>
+Professional inbox organization, email handling, prioritization, and communication support.
+</p>
+
 </div>
 
 <div class="service-card glow-card">
-<div class="service-icon">📅</div>
-<h3>Executive Assistance</h3>
-<p>Calendar scheduling, meeting coordination, administrative organization, and executive support systems.</p>
+
+<div class="service-icon">
+<i class="fa-solid fa-calendar-check"></i>
+</div>
+
+<h3>Calendar Coordination</h3>
+
+<p>
+Meeting scheduling, appointment management, reminders, and executive coordination.
+</p>
+
 </div>
 
 <div class="service-card glow-card">
-<div class="service-icon">🤖</div>
-<h3>AI Workflow Support</h3>
-<p>AI-powered productivity solutions, workflow optimization, and operational process improvement.</p>
+
+<div class="service-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+
+<h3>Customer Support</h3>
+
+<p>
+Professional client communication, follow-ups, and customer service assistance.
+</p>
+
 </div>
 
 <div class="service-card glow-card">
-<div class="service-icon">📊</div>
+
+<div class="service-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h3>AI Productivity Support</h3>
+
+<p>
+Workflow optimization using AI tools, automation systems, and productivity solutions.
+</p>
+
+</div>
+
+<div class="service-card glow-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
 <h3>Business Operations</h3>
-<p>Task coordination, workflow management, operations support, and administrative organization.</p>
+
+<p>
+Administrative coordination, workflow management, and operational organization support.
+</p>
+
 </div>
 
 <div class="service-card glow-card">
-<div class="service-icon">💻</div>
-<h3>Website & Digital Support</h3>
-<p>Website updates, portfolio management, online coordination, and digital business support.</p>
+
+<div class="service-icon">
+<i class="fa-solid fa-file-lines"></i>
 </div>
 
-<div class="service-card glow-card">
-<div class="service-icon">📁</div>
 <h3>Documentation & Data Entry</h3>
-<p>Accurate records management, spreadsheet updates, document preparation, and structured data handling.</p>
+
+<p>
+Accurate records management, spreadsheets, reports, and structured data handling.
+</p>
+
 </div>
 
 </div>
@@ -949,148 +1236,196 @@ Virtual Assistance Solutions
 </div>
 
 </section>
+
+<!-- TOOLS -->
 
 <section id="tools">
 
 <div class="container">
 
-<div class="section-tag">
-TOOLS & PLATFORMS
-</div>
+<div class="section-tag">TOOLS & PLATFORMS</div>
 
 <h2 class="section-title">
-Digital Productivity Stack
-</h2>
+DIGITAL PRODUCTIVITY STACK</h2>
 
-<div class="tools-grid">
-
-<div class="tool-card glow-card">
-<h2>🧠</h2>
-<h3>ChatGPT</h3>
+<div class="tools-grid1">
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-brain"></i></div>
+    <h3 class="style2">ChatGPT</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-brands fa-google"></i></div>
+    <h3 class="style2">Google Workspace</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-brands fa-microsoft"></i></div>
+    <h3 class="style2">Microsoft Office</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-calendar-days"></i></div>
+    <h3 class="style2">Calendly</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-list-check"></i></div>
+    <h3 class="style2">Trello & Notion</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-palette"></i></div>
+    <h3 class="style2">Canva</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-brands fa-slack"></i></div>
+    <h3 class="style2">Slack & Zoom</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-brands fa-github"></i></div>
+    <h3 class="style2">GitHub</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-chart-line"></i></div>
+    <h3 class="style2">Google Sheets</h3>
+  </div>
+  <div class="tool-card glow-card">
+    <div class="tool-icon2"><i class="fa-solid fa-bolt"></i></div>
+    <h3 class="style2">AI Automation</h3>
+  </div>
 </div>
-
-<div class="tool-card glow-card">
-<h2>📊</h2>
-<h3>Google Workspace</h3>
 </div>
-
-<div class="tool-card glow-card">
-<h2>🗂️</h2>
-<h3>Microsoft Office</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>📅</h2>
-<h3>Calendly</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>📋</h2>
-<h3>Trello & Notion</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>🎨</h2>
-<h3>Canva</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>💬</h2>
-<h3>Slack & Zoom</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>🌐</h2>
-<h3>GitHub</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>📈</h2>
-<h3>Google Sheets</h3>
-</div>
-
-<div class="tool-card glow-card">
-<h2>⚡</h2>
-<h3>AI Automation Tools</h3>
-</div>
-
-</div>
-
-</div>
-
 </section>
+
+<!-- EXPERIENCE -->
 
 <section id="experience">
 
 <div class="container">
 
-<div class="section-tag">
-PROFESSIONAL EXPERIENCE
-</div>
+<div class="section-tag">EXPERIENCE</div>
 
 <h2 class="section-title">
-Career Experience
-</h2>
+PROFESSIONAL EXPERIENCE</h2>
 
 <div class="timeline">
-
-<div class="timeline-item glow-card">
-
-<h3>Virtual Assistant (Freelance / Remote)</h3>
-
-<span>Waltech Computer Engineering Ltd. | January 2023 – Present</span>
-
-<p class="section-text">
-Provide executive administrative support including email management, scheduling, digital organization, workflow coordination, documentation systems, customer communication, and AI-powered operational support for improved business productivity and efficiency.
-</p>
-
-</div>
-
-<div class="timeline-item glow-card">
-
-<h3>Customer Service Representative</h3>
-
-<span>First Royal Exchange Ltd. | January 2020 – June 2022</span>
-
-<p class="section-text">
-Delivered professional customer service support by resolving client inquiries, maintaining accurate records, coordinating communication workflows, and improving customer satisfaction through organized administrative support systems.
-</p>
-
-</div>
-
+  <div class="timeline-item glow-card">
+    <div class="exp-icon"> <i class="fa-solid fa-briefcase"></i> </div>
+    <h3>Virtual Assistant (Freelance / Remote)</h3>
+    <span>Waltech Computer Engineering Ltd. | 2023 – Present</span>
+    <p class="section-text"> Provide executive administrative support including scheduling, documentation systems, customer communication, workflow coordination, and AI-powered productivity support. </p>
+  </div>
+  <div class="timeline-item glow-card">
+    <div class="exp-icon"> <i class="fa-solid fa-headset"></i> </div>
+    <h3>Customer Service Representative</h3>
+    <span>First Royal Exchange Ltd. | 2020 – 2022</span>
+    <p class="section-text"> Delivered professional customer service support, maintained records, coordinated communication workflows, and improved operational efficiency. </p>
+  </div>
 </div>
 
 </div>
 
 </section>
+
+<!-- CERTIFICATIONS -->
 
 <section id="certifications">
 
 <div class="container">
 
-<div class="section-tag">
-CERTIFICATIONS
-</div>
+<div class="section-tag">CERTIFICATIONS</div>
 
 <h2 class="section-title">
-Professional Development
-</h2>
+PROFESSIONAL DEVELOPMENT</h2>
 
-<div class="cert-grid">
+<div class="cert-grid1">
+  <div class="cert-card glow-card">
+    <div class="cert-icon1"> <i class="fa-solid fa-graduation-cap"></i> </div>
+    <h3>Associate Degree in Computer Science (In Progress)</h3>
+    <p>&nbsp;</p>
+    <p class="section-text"> Currently studying Computer Science with focus on digital technologies, software systems, problem-solving, and modern computing principles. </p>
+    <p style="margin-top:18px; color:#60a5fa; font-weight:600;">University of the People<br>
+      Sep 2025 – Sep 2027</p>
+  </div>
+  <div class="cert-card glow-card">
+    <div class="cert-icon1"> <i class="fa-solid fa-robot"></i> </div>
+    <h3>Boost Your Career with AI</h3>
+    <p>&nbsp;</p>
+    <p class="section-text"> Completed professional training focused on Artificial Intelligence tools, AI productivity systems, career development, and digital workplace innovation. </p>
+    <p style="margin-top:18px; color:#60a5fa; font-weight:600;">Kiron Open Higher Education<br>
+      Apr 2026 – Jun 2026</p>
+  </div>
+  <div class="cert-card glow-card">
+    <div class="cert-icon1"> <i class="fa-solid fa-user-check"></i></div>
+    <p><strong>Getting Started with Data</strong></p>
+    <p>&nbsp;</p>
+    <p class="section-text"> Currently undergoing professional training focused on understanding of data concepts, such as types of data, big data, the data analytics process, data vituaization and the data landscape. </p>
+    <p style="margin-top:18px; color:#60a5fa; font-weight:600;">IBM SkillsBuild<br>
+      Apr 2026 – Dec 2026</p>
+    </div>
+</div>
+</div>
+<!-- PROFESSIONAL DEVELOPMENT -->
+
+<section id="development">
+
+<div class="container">
+  <div class="cert-grid">
+
+<!-- PMI Membership -->
 
 <div class="cert-card glow-card">
-<h3>AI Productivity & Virtual Assistance</h3>
-<p>Professional training in AI-assisted workflow systems, administrative productivity, and digital business operations.</p>
+
+<div class="cert-icon">
+<i class="fa-solid fa-users"></i>
 </div>
 
-<div class="cert-card glow-card">
-<h3>Financial Literacy, Budgeting & Investing</h3>
-<p>Certification focused on financial literacy, budgeting principles, and investment fundamentals using quantitative skills.</p>
+<h3>Project Management Institute (PMI) Member</h3>
+
+<p class="section-text">
+Active member of the Project Management Institute (PMI), engaging in professional development, project management best practices, leadership growth, and industry learning resources.
+</p>
+
+<p style="margin-top:18px; color:#60a5fa; font-weight:600;">
+Professional Membership
+</p>
+
 </div>
 
+<!-- Online Courses -->
+
 <div class="cert-card glow-card">
-<h3>Customer Service & Administrative Operations</h3>
-<p>Professional development training focused on communication systems, customer support, and operational excellence.</p>
+
+<div class="cert-icon">
+<i class="fa-solid fa-laptop"></i>
+</div>
+
+<h3>Online Professional Courses</h3>
+
+<p class="section-text">
+Continuously improving skills through online learning in Artificial Intelligence, Virtual Assistance, Customer Support, Digital Productivity, Business Operations, and Remote Collaboration Tools.
+</p>
+
+<p style="margin-top:18px; color:#60a5fa; font-weight:600;">
+Continuous Professional Development
+</p>
+
+</div>
+
+<!-- AI Learning -->
+
+<div class="cert-card glow-card">
+
+<div class="cert-icon">
+<i class="fa-solid fa-brain"></i>
+</div>
+
+<h3>AI & Digital Productivity Training</h3>
+
+<p class="section-text">
+Actively participating in AI-focused webinars, workshops, and training programs covering AI tools, automation systems, workflow optimization, and digital workplace efficiency.
+</p>
+
+<p style="margin-top:18px; color:#60a5fa; font-weight:600;">
+Ongoing Learning & Development
+</p>
+
 </div>
 
 </div>
@@ -1098,152 +1433,69 @@ Professional Development
 </div>
 
 </section>
+</section>
+
+<!-- TESTIMONIALS -->
 
 <section id="testimonials">
 
 <div class="container">
 
-<div class="section-tag">
-TESTIMONIALS
-</div>
+<div class="section-tag">TESTIMONIALS</div>
 
 <h2 class="section-title">
-What Clients Say
-</h2>
+WHAT CLIENTS SAY</h2>
 
-<div class="testimonials-grid">
-
-<div class="testimonial-card glow-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-Stanley is highly organized, dependable, and professional in handling administrative support and communication tasks. His ability to manage workflows efficiently and communicate clearly makes him a valuable asset to any business.
-</p>
-
-<h4>Ilonze Chizoba Esther</h4>
-
-<p><em>AI Training Specialist at VSavvy Academy</em></p>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link">
-✔ Verified LinkedIn Recommendation
-</a>
-
+<div class="testimonials-grid1">
+  <div class="testimonial-card glow-card">
+    <div class="testimonial-icon"> <i class="fa-solid fa-quote-left"></i> </div>
+    <div class="stars1">★★★★★</div>
+    <p><span class="section-text">Stanley is highly organized, dependable, and professional in handling administrative support and communication tasks.</span></p>
+    <p>&nbsp;</p>
+    <h4>Ilonze Chizoba Esther</h4>
+    <p><em>AI Training Specialist </em></p>
+    <p>&nbsp;</p>
+    <p><a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link">✔ Verified LinkedIn Recommendation </a> </p>
+    </div>
+  <div class="testimonial-card glow-card">
+    <div class="testimonial-icon"> <i class="fa-solid fa-quote-left"></i> </div>
+    <div class="stars1">★★★★★</div>
+    <p><span class="section-text">Stanley Walton consistently demonstrated professionalism, initiative, and strong organizational abilities.</span></p>
+    <p>&nbsp;</p>
+    <h4>Gabriel Ohworuka</h4>
+    <p><em>CEO at Herriel Foods</em></p>
+    <p>&nbsp;</p>
+    <a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link"> ✔ Verified LinkedIn Recommendation </a> </div>
+  <div class="testimonial-card glow-card">
+    <div class="testimonial-icon"> <i class="fa-solid fa-quote-left"></i> </div>
+    <div class="stars1">★★★★★</div>
+    <p><span class="section-text">His coordination and professionalism significantly contributed to the success of our project collaboration.</span></p>
+    <p>&nbsp;</p>
+    <h4>Charles Walton</h4>
+    <p><em>AI Certified Consultant</em></p>
+    <p>&nbsp;</p>
+    <a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link"> ✔ Verified LinkedIn Recommendation </a> </div>
 </div>
-
-<div class="testimonial-card glow-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-Stanley Walton consistently demonstrated professionalism, initiative, and strong organizational abilities while supporting operations and workflow coordination within our organization.
-</p>
-
-<h4>Gabriel Ohworuka</h4>
-
-<p><em>CEO at Herriel Foods</em></p>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link">
-✔ Verified LinkedIn Recommendation
-</a>
-
-</div>
-
-<div class="testimonial-card glow-card">
-
-<div class="stars">★★★★★</div>
-
-<p>
-I collaborated with Stanley Walton on an Automated Client Engagement & Business Insights Dashboard project. His coordination and professionalism significantly contributed to the project’s success.
-</p>
-
-<h4>Charles Walton</h4>
-
-<p><em>AI Certified Customer & Revenue Analytics Consultant</em></p>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="verify-link">
-✔ Verified LinkedIn Recommendation
-</a>
-
-</div>
-
-</div>
-
 </div>
 
 </section>
 
-<section>
-
-<div class="container">
-
-<div class="recruiter-cta glow-card">
-
-<h2>
-Looking For A Reliable Executive Virtual Assistant?
-</h2>
-
-<p>
-I help executives, startups, entrepreneurs, and remote teams improve productivity through organized operations, AI-assisted workflows, customer communication support, executive coordination, and digital administrative systems.
-</p>
-
-<div class="contact-buttons">
-
-<a href="mailto:st2walton1@gmail.com" class="btn primary-btn">
-Book A Discovery Call
-</a>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn secondary-btn">
-Connect On LinkedIn
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
+<!-- CONTACT -->
 
 <section id="contact">
-
-<div class="container">
-
-<div class="contact-box glow-card">
-
-<h2>
-Let's Work Together
-</h2>
-
-<p>
-Looking for a reliable AI-powered Administrative & Executive Virtual Assistant to support communication systems, digital workflows, customer operations, scheduling, and productivity management? Let's connect.
-</p>
-
-<div class="availability">
-🟢 Available for Remote Opportunities
-</div>
-
-<div class="contact-buttons">
-
-<a href="mailto:st2walton1@gmail.com" class="btn primary-btn">
-st2walton1@gmail.com
-</a>
-
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn secondary-btn">
-LinkedIn Profile
-</a>
-
-<a href="https://github.com/st2walton1" target="_blank" class="btn secondary-btn">
-GitHub Portfolio
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="contact-box glow-card">
+      <h2><span class="section-title">LET'S WORK TOGETHER</span></h2>
+      <p>&nbsp; </p>
+      <p><span class="section-text">Looking for a reliable AI-powered Executive Virtual Assistant to support communication systems, digital workflows, scheduling, and customer operations? Let's connect.</span></p>
+      <p>&nbsp;</p>
+      <div class="availability1"> 🟢 Available for Remote Opportunities </div>
+      <div class="contact-buttons"> <a href="mailto:st2walton1@gmail.com" class="btn primary-btn"> st2walton1@gmail.com </a> <a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn secondary-btn"> LinkedIn Profile </a> <a href="https://github.com/st2walton1" target="_blank" class="btn secondary-btn"> GitHub Portfolio </a> </div>
+    </div>
+  </div>
 </section>
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1251,21 +1503,24 @@ GitHub Portfolio
 
 <div class="footer-content">
 
-<div class="footer-logo">
-
-<img src="logo.png" alt="Logo">
-
-<div>
-<h2>Stanley <span>Walton</span></h2>
-<p>AI-Powered Executive Virtual Assistant</p>
-</div>
-
-</div>
+<p>
+© 2026 Stanley Walton. All Rights Reserved.
+</p>
 
 <div class="footer-links">
-<a href="https://github.com/st2walton1" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank">LinkedIn</a>
-<a href="mailto:st2walton1@gmail.com">Email</a>
+
+<a href="https://github.com/st2walton1" target="_blank">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank">
+LinkedIn
+</a>
+
+<a href="mailto:st2walton1@gmail.com">
+Email
+</a>
+
 </div>
 
 </div>
@@ -1273,6 +1528,23 @@ GitHub Portfolio
 </div>
 
 </footer>
+
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
+</script>
 
 </body>
 </html>
