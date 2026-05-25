@@ -1416,6 +1416,113 @@ window.addEventListener('scroll', () => {
 });
 
 </script>
+<!-- FLOATING HIRE ME BUTTON -->
 
+<a href="https://wa.me/2348012345678?text=Hello%20Stanley%2C%20I%20would%20like%20to%20hire%20you."
+class="floating-hire-btn"
+target="_blank"
+aria-label="Hire Me on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<span>Hire Me</span>
+
+</a>
+
+<style>
+
+.floating-hire-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#25D366;
+    color:white;
+
+    padding:15px 22px;
+    border-radius:60px;
+
+    font-size:16px;
+    font-weight:700;
+
+    box-shadow:
+    0 10px 25px rgba(37,211,102,0.35);
+
+    transition:0.3s ease;
+
+    animation:floatPulse 2s infinite;
+}
+
+.floating-hire-btn i{
+    font-size:28px;
+}
+
+.floating-hire-btn:hover{
+    transform:translateY(-5px) scale(1.04);
+    background:#1ebe5d;
+}
+
+@keyframes floatPulse{
+
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,0.6);
+    }
+
+    70%{
+        transform:scale(1.03);
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media(max-width:768px){
+
+    .floating-hire-btn{
+        right:15px;
+        bottom:15px;
+
+        padding:14px 18px;
+
+        font-size:15px;
+    }
+
+    .floating-hire-btn i{
+        font-size:24px;
+    }
+
+}
+
+/* SMALL PHONE SCREENS */
+
+@media(max-width:480px){
+
+    .floating-hire-btn{
+        padding:13px 16px;
+        border-radius:50px;
+    }
+
+    .floating-hire-btn span{
+        display:none;
+    }
+
+    .floating-hire-btn i{
+        font-size:28px;
+    }
+
+}
+
+</style>
 </body>
 </html>
