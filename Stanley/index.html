@@ -592,8 +592,6 @@ nav{
     margin-top:18px;
     color:var(--primary-light) !important;
     font-weight:700;
-}
-
 /* ===== TESTIMONIALS ===== */
 
 .testimonials-grid{
@@ -601,6 +599,7 @@ nav{
     grid-template-columns:repeat(3,1fr);
     gap:28px;
     margin-top:50px;
+    align-items:stretch;
 }
 
 .testimonial-card{
@@ -608,6 +607,16 @@ nav{
     border:1px solid var(--border);
     border-radius:28px;
     padding:35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:var(--transition);
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
 }
 
 .testimonial-icon{
@@ -619,20 +628,62 @@ nav{
 .stars{
     color:var(--primary-light);
     margin-bottom:18px;
+    letter-spacing:3px;
 }
 
 .testimonial-card p{
     color:var(--muted);
+    line-height:1.8;
+    margin-bottom:22px;
 }
 
-.testimonial-card h4{
-    margin-top:18px;
+.testimonial-profile{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-top:auto;
+    margin-bottom:20px;
 }
 
-.verify-link{
-    display:inline-block;
-    margin-top:18px;
-    color:var(--primary-light);
+.testimonial-profile img{
+    width:72px;
+    height:72px;
+    border-radius:22px;
+    object-fit:cover;
+    border:3px solid rgba(96,165,250,0.5);
+    box-shadow:0 0 18px rgba(37,99,235,0.25);
+}
+
+.client-info h4{
+    color:white;
+    margin-bottom:5px;
+    font-size:1.05rem;
+}
+
+.client-info p{
+    margin:0;
+    font-size:14px;
+    color:#94a3b8;
+}
+
+.linkedin-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(96,165,250,0.25);
+    color:#93c5fd;
+    font-size:14px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.linkedin-badge:hover{
+    background:#2563eb;
+    color:white;
 }
 
 /* ===== CONTACT ===== */
@@ -829,7 +880,7 @@ section{
     color:white;
     box-shadow:0 0 30px rgba(37,99,235,0.35);
 }
-.style8 {line-height: 1.9; font-size: 18px; font-weight: bold; }
+.style8 {line-height: 1.8; font-size: 22px; font-weight: bold; }
 </style>
 </head>
 
@@ -1275,9 +1326,6 @@ Professional Membership
 
 </section>
 
-<!-- TESTIMONIALS -->
-
-<section id="testimonials">
 
 <div class="container">
 
@@ -1311,9 +1359,7 @@ Stanley is highly organized, dependable, and professional in handling administra
 
 <div class="testimonial-profile">
 
-<div class="testimonial-image-wrap">
-<img src="esther.jpeg" alt="Ilonze Chizoba Esther">
-</div>
+<div class="testimonial-image-wrap"><img src="esther.jpeg" alt="Ilonze Chizoba Esther"></div>
 
 <div class="client-info">
 
