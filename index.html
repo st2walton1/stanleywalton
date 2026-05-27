@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)https://st2walton1.github.io/stanleywalton/index.html -->
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9P2X15H4QG"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+<title>Stanley Walton | AI-Powered Executive Virtual Assistant</title>
 
-gtag('config', 'G-9P2X15H4QG');
-</script>
+<meta name="description" content="Stanley Walton - AI-Powered Executive Virtual Assistant helping businesses with administrative support, workflow optimization, scheduling, customer communication, and digital productivity systems.">
 
-<!-- End Google tag -->
+<meta name="keywords" content="Virtual Assistant, Executive Assistant, AI Virtual Assistant, Administrative Support, Customer Support">
 
-<title>STANLEY WALTON - Portfolio</title>
+<meta name="author" content="Stanley Walton">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
+
+:root{
+    --primary:#2563eb;
+    --primary-light:#60a5fa;
+    --dark:#050505;
+    --card:#0f172a;
+    --text:#ffffff;
+    --muted:#cbd5e1;
+    --border:rgba(255,255,255,0.08);
+    --transition:0.35s ease;
+}
 
 *{
     margin:0;
@@ -29,351 +40,1608 @@ gtag('config', 'G-9P2X15H4QG');
     box-sizing:border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0d1117;
-    color:white;
-    line-height:1.6;
-    padding:40px 20px;
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
 }
 
-#wrapper{
-    max-width:1000px;
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--dark);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* ===== BACKGROUND ===== */
+
+body::before{
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:-2;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:var(--primary);
+    filter:blur(180px);
+    opacity:0.08;
+    top:-180px;
+    right:-120px;
+    z-index:-1;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:min(92%,1300px);
     margin:auto;
 }
 
-#header{
-    background:rgba(255,255,255,0.04);
-    padding:40px;
-    border-radius:12px;
-    backdrop-filter:blur(8px);
+section{
+    padding:100px 0;
 }
 
-h1{
-    text-align:center;
-    font-size:48px;
+.section-tag{
+    color:var(--primary-light);
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.section-title{
+    font-size:clamp(2rem,5vw,4rem);
+    font-weight:900;
+    line-height:1.2;
     margin-bottom:20px;
 }
 
-.intro-text{
+.section-text{
+    color:var(--muted);
+    font-size:17px;
+    line-height:1.9;
+}
+
+.glow-card{
+    box-shadow:0 0 35px rgba(37,99,235,0.08);
+}
+
+/* ===== BUTTONS ===== */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:15px 28px;
+    border-radius:50px;
+    font-weight:700;
+    transition:var(--transition);
+    min-height:52px;
+    border:none;
+    cursor:pointer;
     text-align:center;
+}
+
+.primary-btn{
+    background:var(--primary);
+    color:#fff;
+    box-shadow:0 0 25px rgba(37,99,235,0.35);
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+    background:#1d4ed8;
+}
+
+.secondary-btn{
+    border:1px solid rgba(255,255,255,0.15);
+    color:#fff;
+    background:transparent;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+.discovery-btn{
+    background:#0f172a;
+    border:1px solid rgba(96,165,250,0.4);
+    color:#fff;
+}
+
+.discovery-btn:hover{
+    background:var(--primary);
+    transform:translateY(-4px);
+}
+
+/* ===== HEADER ===== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(0,0,0,0.88);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+nav{
+    min-height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo-text h1{
+    font-size:clamp(1.5rem,3vw,2rem);
+    font-weight:900;
+}
+
+.logo-text span{
+    color:var(--primary-light);
+}
+
+.logo-text p{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#94a3b8;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-links a{
+    color:#fff;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition:var(--transition);
+}
+
+.nav-links a:hover{
+    color:var(--primary-light);
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:120px;
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-content h4{
+    color:var(--primary-light);
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:clamp(2.8rem,8vw,5.5rem);
+    line-height:1.1;
+    margin-bottom:25px;
+    font-weight:900;
+}
+
+.hero-content h1 span{
+    color:var(--primary-light);
+}
+
+.hero-content p{
+    color:#d1d5db;
     font-size:18px;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.availability{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:40px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(37,99,235,0.4);
+    color:#93c5fd;
+    margin-bottom:30px;
+    font-size:15px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    margin:auto;
+    filter:drop-shadow(0 0 45px rgba(37,99,235,0.4));
+}
+
+/* ===== STATS ===== */
+
+.stats{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:30px 20px;
+    text-align:center;
+    transition:var(--transition);
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+}
+
+.stat-card h2{
+    color:var(--primary-light);
+    font-size:2rem;
     margin-bottom:10px;
+}
+
+.stat-card p{
+    color:var(--muted);
+}
+
+/* ===== ABOUT ===== */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image img{
+    border-radius:35px;
+    border:1px solid var(--border);
+}
+
+.skills{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.skill-box{
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:25px;
+}
+
+.skill-box h4{
+    margin-bottom:10px;
+}
+
+.skill-box p{
+    color:var(--muted);
+}
+
+/* ===== SERVICES ===== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+    align-items:stretch;
+}
+
+.service-card{
+    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:35px;
+    transition:var(--transition);
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.service-icon{
+    width:80px;
+    height:80px;
+    border-radius:22px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.service-icon i{
+    font-size:34px;
+    color:var(--primary-light);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    font-size:1.35rem;
+}
+
+.service-card p{
+    color:var(--muted);
+}
+
+/* ===== TOOLS ===== */
+
+.tools-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:24px;
+    margin-top:50px;
+}
+
+.tool-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:28px 20px;
+    text-align:center;
+    transition:var(--transition);
+}
+
+.tool-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+}
+
+.tool-icon{
+    width:70px;
+    height:70px;
+    margin:auto auto 18px;
+    border-radius:18px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.tool-icon i{
+    font-size:30px;
+    color:var(--primary-light);
+}
+
+/* ===== EXPERIENCE ===== */
+
+.timeline{
+    position:relative;
+    margin-top:60px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:20px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:rgba(255,255,255,0.15);
+}
+
+.timeline-item{
+    position:relative;
+    margin-left:70px;
+    margin-bottom:35px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:35px;
+}
+
+.timeline-item::before{
+    content:'';
+    position:absolute;
+    left:-58px;
+    top:38px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--primary);
+}
+
+.exp-icon{
+    font-size:28px;
+    color:var(--primary-light);
+    margin-bottom:15px;
+}
+
+.timeline-item h3{
+    margin-bottom:10px;
+}
+
+.timeline-item span{
+    display:block;
+    color:var(--primary-light);
+    margin-bottom:18px;
+    font-weight:600;
+}
+
+.timeline-item p{
+    color:var(--muted);
+    margin-bottom:15px;
+}
+
+/* ===== CERTIFICATIONS ===== */
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:50px;
+}
+
+.cert-card{
+    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:35px;
+    transition:var(--transition);
+}
+
+.cert-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+}
+
+.cert-icon{
+    width:75px;
+    height:75px;
+    border-radius:20px;
+    background:rgba(37,99,235,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+}
+
+.cert-icon i{
+    font-size:34px;
+    color:var(--primary-light);
+}
+
+.cert-card p{
+    color:var(--muted);
+}
+
+.cert-date{
+    margin-top:18px;
+    color:var(--primary-light) !important;
+    font-weight:700;
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:50px;
 }
 
 .testimonial-card{
+    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:35px;
+    transition:var(--transition);
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.testimonial-icon{
+    font-size:34px;
+    color:var(--primary-light);
+    margin-bottom:15px;
+}
+
+.stars{
+    color:var(--primary-light);
+    margin-bottom:18px;
+}
+
+.testimonial-card p{
+    color:var(--muted);
+}
+
+.testimonial-profile{
     display:flex;
-    gap:20px;
     align-items:center;
-    background:rgba(255,255,255,0.05);
-    padding:25px;
-    border-radius:14px;
-    margin:40px auto;
-    max-width:800px;
+    gap:16px;
+    margin-top:25px;
 }
 
-.testimonial-card img{
-    width:160px;
-    height:160px;
-    object-fit:cover;
-    border-radius:20px;
+.testimonial-image-wrap{
+    width:75px;
+    height:75px;
+    border-radius:22px;
+    padding:3px;
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
     flex-shrink:0;
-    border:2px solid rgba(255,255,255,0.2);
 }
 
-.testimonial-content{
-    flex:1;
+.testimonial-profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:18px;
 }
 
-.testimonial-name{
-    font-size:20px;
-    font-weight:bold;
-    color:#58a6ff;
+.client-info h4{
+    margin-bottom:5px;
+}
+
+.client-info p{
+    margin:0;
+    font-size:14px;
+    color:#94a3b8;
+}
+
+.linkedin-badge{
+    margin-top:22px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(96,165,250,0.25);
+    color:#93c5fd;
+    font-size:14px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.linkedin-badge:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+/* ===== CONTACT ===== */
+
+.contact-box{
+    background:linear-gradient(to right,#0a0a0a,#111827);
+    border:1px solid var(--border);
+    border-radius:40px;
+    padding:70px 50px;
+    text-align:center;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:45px;
+}
+
+.contact-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:30px;
+    transition:var(--transition);
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--primary);
+}
+
+.contact-card i{
+    font-size:34px;
+    color:var(--primary-light);
+    margin-bottom:18px;
+}
+
+.contact-card h3{
     margin-bottom:10px;
 }
 
-.testimonial-text{
-    font-size:16px;
-    font-style:italic;
+.contact-card p,
+.contact-card a{
+    color:var(--muted);
+    word-break:break-word;
 }
 
-.contact-info{
-    text-align:center;
-    font-size:16px;
-    margin-top:30px;
-}
-
-.contact-info a{
-    color:#58a6ff;
-    text-decoration:none;
-}
-
-.contact-info a:hover{
-    text-decoration:underline;
-}
-
-.social-icons{
-    text-align:center;
-    margin-top:30px;
-}
-
-.social-icons a{
-    margin:0 12px;
-    color:#58a6ff;
-    text-decoration:none;
-}
-
-nav ul{
+.contact-buttons{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    list-style:none;
-    gap:15px;
-    margin-top:30px;
+    gap:18px;
+    margin-top:40px;
 }
 
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    padding:10px 18px;
-    border:1px solid rgba(255,255,255,0.2);
-    border-radius:6px;
-    transition:0.3s ease;
-}
-
-nav ul li a:hover{
-    background:#0A66C2;
-    border-color:#0A66C2;
-}
+/* ===== FOOTER ===== */
 
 footer{
+    border-top:1px solid var(--border);
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.footer-content p{
+    color:#94a3b8;
+}
+
+.footer-links{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#94a3b8;
+    transition:var(--transition);
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+/* ===== FLOATING BUTTON ===== */
+
+.floating-hire-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#25D366;
+    color:#fff;
+    padding:15px 22px;
+    border-radius:60px;
+    font-size:16px;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(37,211,102,0.35);
+    transition:0.3s ease;
+    animation:floatPulse 2s infinite;
+}
+
+.floating-hire-btn:hover{
+    transform:translateY(-5px) scale(1.04);
+}
+
+.floating-hire-btn i{
+    font-size:28px;
+}
+
+@keyframes floatPulse{
+    0%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,0.6);
+    }
+
+    70%{
+        transform:scale(1.03);
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1100px){
+
+.hero-grid,
+.about-grid{
+    grid-template-columns:1fr;
     text-align:center;
-    margin-top:40px;
-    font-size:14px;
-    color:#999;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-image{
+    order:-1;
+}
+
+.services-grid,
+.cert-grid,
+.testimonials-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.tools-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
 }
 
 @media(max-width:768px){
 
-    .testimonial-card{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .testimonial-card img{
-        width:140px;
-        height:140px;
-    }
+section{
+    padding:80px 0;
 }
 
-.style2{
-    font-size:x-large;
+.menu-btn{
+    display:block;
 }
 
-.style8{
-    font-size:large;
-    font-style:italic;
+.nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#050505;
+    flex-direction:column;
+    padding:30px 0;
+    display:none;
+    border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
-.resume-btn1{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 28px;
-    background:#0A66C2;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s ease;
+.nav-links.active{
+    display:flex;
 }
 
-.resume-btn1:hover{
-    background:#084298;
+.services-grid,
+.tools-grid,
+.cert-grid,
+.testimonials-grid,
+.skills,
+.stats{
+    grid-template-columns:1fr;
 }
 
-.resume-container{
+.hero{
     text-align:center;
-    margin-bottom:40px;
+    padding-top:140px;
 }
 
-.style9{
-    font-size:x-large;
-    font-style:italic;
-    font-family:Georgia,"Times New Roman",Times,serif;
+.contact-box{
+    padding:45px 25px;
 }
 
-.style11{
-    font-size:large;
-    font-style:italic;
-    font-family:Georgia,"Times New Roman",Times,serif;
+.timeline::before{
+    left:10px;
 }
 
-.resume-btn11{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 28px;
-    background:#0A66C2;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s ease;
+.timeline-item{
+    margin-left:40px;
+    padding:25px;
 }
 
-.resume-btn11:hover{
-    background:#084298;
+.timeline-item::before{
+    left:-32px;
 }
 
-/* Sticky Mobile Hire Me Button */
-
-.sticky-hire-btn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#0A66C2;
-    color:white;
-    padding:14px 24px;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:bold;
-    box-shadow:0 4px 12px rgba(0,0,0,0.3);
-    z-index:9999;
-    transition:0.3s ease;
+.footer-content{
+    flex-direction:column;
+    text-align:center;
 }
 
-.sticky-hire-btn:hover{
-    background:#084298;
-    transform:translateY(-3px);
 }
 
-/* Hide Sticky Button on Desktop */
+@media(max-width:480px){
 
-@media (min-width:768px){
-
-    .sticky-hire-btn{
-        display:none;
-    }
+.container{
+    width:94%;
 }
 
-.resume-btn111 {    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 28px;
-    background:#0A66C2;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s ease;
+.hero-content h4{
+    letter-spacing:2px;
+    font-size:12px;
 }
-.hero-badge1 {display:inline-block;
-    background:rgba(88,166,255,0.12);
-    border:1px solid rgba(88,166,255,0.25);
-    color:#58a6ff;
-    padding:10px 20px;
-    border-radius:50px;
-    font-size:14px;
-    font-weight:bold;
-    letter-spacing:1px;
-    margin-bottom:20px;
+
+.hero-content p,
+.section-text{
+    font-size:15px;
 }
+
+.btn{
+    width:100%;
+}
+
+
+.floating-hire-btn span{
+    display:none;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div id="wrapper">
+<!-- HEADER -->
 
-<header id="header">
+<header>
 
-<h1><img src="index_files/logo.png" width="222" height="170">STANLEY WALTON</h1>
+<div class="container">
 
-<p align="center"><img src="./index_files/pics.png" width="264" height="266"></p>
+<nav>
 
-<p align="center" class="style2"><span class="hero-badge1">AI-Powered Administrative &amp; Executive Virtual Assistant. </span></p>
-
-<p align="center" class="style2">&nbsp;</p>
-
-<p align="center" class="style9">
-
-Organized, detail-oriented, and tech-savvy Administrative & Executive Virtual Assistant providing AI-assisted support in business operations, digital marketing, executive scheduling, communication management, customer support, and administrative coordination for entrepreneurs, executives, and growing organizations.</p>
-
-<p align="center" class="style8">&nbsp;</p>
-<p align="center" class="style8">&nbsp;</p>
-
-<div class="resume-container">
-
-<p>
-
-<a href="contact.html"
-class="resume-btn1">
-Hire Me</a></p>
-<p>&nbsp;</p>
-<p><a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf"
-target="_blank"
-class="resume-btn111"
-download>Download Resume </a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<div class="logo-text">
+<h1>Stanley <span>Walton</span></h1>
+<p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
 </div>
 
-<div class="social-icons">
+<div class="nav-links">
 
-<p>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#tools">Tools</a>
+<a href="#experience">Experience</a>
+<a href="#certifications">Certifications</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
 
-<a href="https://x.com/StanleyWal79099" target="_blank">
-Twitter</a>
-
-<a href="https://github.com/st2walton1" target="_blank">
-GitHub</a>
-
-<a href="https://linkedin.com/in/stanley-walton-08a774396" target="_blank">
-LinkedIn</a></p>
 </div>
 
-<nav class="use-middle">
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
 
-<ul>
-
-<li><a href="index.html">HOME</a></li>
-
-<li><a href="intro.html">INTRO</a></li>
-
-<li><a href="skills.html">SKILLS</a></li>
-
-<li><a href="experience.html">EXPERIENCE</a></li>
-
-<li><a href="portfolio.html">PORTFOLIO</a></li>
-
-<li><a href="testimonials.html">TESTIMONIALS</a></li>
-
-<li><a href="contact.html">CONTACT</a></li>
-</ul>
 </nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div class="hero-content">
+
+<h4>REMOTE EXECUTIVE SUPPORT & AI OPERATIONS</h4>
+
+<h1>
+Executive Assistant <span>& AI Virtual Assistant</span>
+</h1>
+
+<p>
+Helping founders, entrepreneurs, and remote teams streamline communication, improve productivity, and optimize daily operations through AI-powered executive support and administrative coordination.
+</p>
+
+<div class="availability">
+  <div align="center">Available for Remote Executive Support • Global Collaboration.<br>
+    Response within 24 hours </div>
+</div>
+
+<div class="hero-buttons">
+
+<a href="mailto:st2walton1@gmail.com" class="btn primary-btn">
+<i class="fa-solid fa-envelope"></i>
+Hire Me
+</a>
+
+<a href="Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn">
+<i class="fa-solid fa-file-arrow-down"></i>
+Download Resume
+</a>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank" class="btn primary-btn">
+<i class="fa-brands fa-linkedin"></i>
+LinkedIn
+</a>
+
+<a href="https://calendly.com/st2walton1/discovery-call-with-stanley-walton" target="_blank" class="btn discovery-btn">
+<i class="fa-solid fa-calendar-check"></i>
+Book Discovery Call
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-card glow-card">
+<h2>3+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-card glow-card">
+<h2>100%</h2>
+<p>Professional Support</p>
+</div>
+
+<div class="stat-card glow-card">
+<h2>24/7</h2>
+<p>Remote Availability</p>
+</div>
+
+<div class="stat-card glow-card">
+<h2>AI</h2>
+<p>Workflow Solutions</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+<img src="logo.png" alt="Stanley Walton Logo">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-image">
+<img src="Stanley.png" alt="Stanley Walton">
+</div>
+
+<div>
+
+<div class="section-tag">ABOUT ME</div>
+
+<h2 class="section-title">
+AI-Powered Executive & Administrative Support
+</h2>
+
+<p class="section-text">
+I provide organized, reliable, and detail-oriented executive virtual assistance services designed to improve communication, productivity, scheduling, and operational efficiency for modern businesses and professionals.
+</p>
+
+<div class="skills">
+
+<div class="skill-box glow-card">
+<h4>Email & Communication</h4>
+<p>Inbox organization and professional communication support.</p>
+</div>
+
+<div class="skill-box glow-card">
+<h4>Calendar Management</h4>
+<p>Meeting scheduling and executive coordination support.</p>
+</div>
+
+<div class="skill-box glow-card">
+<h4>Customer Support</h4>
+<p>Professional customer interaction and relationship management.</p>
+</div>
+
+<div class="skill-box glow-card">
+<h4>AI Workflow Systems</h4>
+<p>AI-powered productivity and workflow optimization solutions.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-tag">SERVICES</div>
+
+<h2 class="section-title">
+Virtual Assistance Solutions
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<h3>Email Management</h3>
+<p>Professional inbox organization, prioritization, and communication management.</p>
+</div>
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-calendar-check"></i>
+</div>
+<h3>Executive Calendar Management</h3>
+<p>Scheduling, reminders, meeting coordination, and time-zone management.</p>
+</div>
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+<h3>Customer Support</h3>
+<p>Professional client communication, follow-ups, and support assistance.</p>
+</div>
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+<h3>AI Productivity Support</h3>
+<p>Workflow optimization using AI tools, automation systems, and productivity solutions.</p>
+</div>
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+<h3>Business Operations</h3>
+<p>Administrative coordination and operational workflow support.</p>
+</div>
+
+<div class="service-card glow-card">
+<div class="service-icon">
+<i class="fa-solid fa-file-lines"></i>
+</div>
+<h3>Documentation & Data Entry</h3>
+<p>Accurate records management, spreadsheets, reporting, and structured data handling.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TOOLS -->
+
+<section id="tools">
+
+<div class="container">
+
+<div class="section-tag">TOOLS & PLATFORMS</div>
+
+<h2 class="section-title">
+Digital Productivity Stack
+</h2>
+
+<div class="tools-grid">
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-brain"></i></div>
+<h3>ChatGPT</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-brands fa-google"></i></div>
+<h3>Google Workspace</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-brands fa-microsoft"></i></div>
+<h3>Microsoft Office</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-calendar-days"></i></div>
+<h3>Calendly</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-list-check"></i></div>
+<h3>Trello & Notion</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-palette"></i></div>
+<h3>Canva</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-brands fa-slack"></i></div>
+<h3>Slack & Zoom</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-brands fa-github"></i></div>
+<h3>GitHub</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-chart-line"></i></div>
+<h3>Google Sheets</h3>
+</div>
+
+<div class="tool-card glow-card">
+<div class="tool-icon"><i class="fa-solid fa-bolt"></i></div>
+<h3>AI Automation</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-tag">EXPERIENCE</div>
+
+<h2 class="section-title">
+Professional Experience
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item glow-card">
+
+<div class="exp-icon">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+
+<h3>Remote Executive Assistant & AI Virtual Assistant</h3>
+
+<span>Waltech Computer Engineering Ltd. | 2023 – Present</span>
+
+<p>
+Managed executive calendars, communication workflows, and administrative systems to improve operational efficiency for remote teams.
+</p>
+
+<p>
+Handled high-volume inbox management, meeting scheduling, and virtual coordination with professionalism and accuracy.
+</p>
+
+<p>
+Supported workflow optimization using digital productivity and AI-powered systems.
+</p>
+
+</div>
+
+<div class="timeline-item glow-card">
+
+<div class="exp-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+
+<h3>Customer Service Representative</h3>
+
+<span>First Royal Exchange Ltd. | 2020 – 2022</span>
+
+<p>
+Provided professional customer service support through email, phone, and direct communication channels.
+</p>
+
+<p>
+Maintained accurate customer records and coordinated communication workflows across departments.
+</p>
+
+<p>
+Improved customer response processes and operational communication systems.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+<div class="container">
+
+<div class="section-tag">CERTIFICATIONS</div>
+
+<h2 class="section-title">
+Professional Development
+</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card glow-card">
+
+<div class="cert-icon">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+
+<h3>Associate Degree in Computer Science (In Progress)</h3>
+
+<p>
+Currently studying Computer Science with a focus on digital technologies and software systems.
+</p>
+
+<p class="cert-date">
+University of the People<br>
+2025 – 2027
+</p>
+
+</div>
+
+<div class="cert-card glow-card">
+
+<div class="cert-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+
+<h3>Boost Your Career with AI</h3>
+
+<p>
+Professional training focused on AI productivity tools and digital workplace innovation.
+</p>
+
+<p class="cert-date">
+Kiron Open Higher Education
+</p>
+
+</div>
+
+<div class="cert-card glow-card">
+
+<div class="cert-icon">
+<i class="fa-solid fa-users"></i>
+</div>
+
+<h3>Project Management Institute (PMI) Member</h3>
+
+<p>
+Active PMI member engaged in project management best practices and leadership development.
+</p>
+
+<p class="cert-date">
+Professional Membership
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+
+<div class="container">
+
+<div class="section-tag">TESTIMONIALS</div>
+
+<h2 class="section-title">
+What Clients Say
+</h2>
+
+<div class="testimonials-grid">
+
+<div class="testimonial-card glow-card">
+
+<div class="testimonial-icon">
+<i class="fa-solid fa-quote-left"></i>
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+Stanley is highly organized, dependable, and professional in handling communication workflows and executive coordination tasks.
+</p>
+
+<div class="testimonial-profile">
+
+<div class="testimonial-image-wrap">
+<img src="esther.jpeg" alt="Ilonze Chizoba Esther">
+</div>
+
+<div class="client-info">
+<h4>Ilonze Chizoba Esther</h4>
+<p>AI Training Specialist</p>
+</div>
+
+</div>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="linkedin-badge">
+<i class="fa-brands fa-linkedin"></i>
+Verified LinkedIn Recommendation
+</a>
+
+</div>
+
+<div class="testimonial-card glow-card">
+
+<div class="testimonial-icon">
+<i class="fa-solid fa-quote-left"></i>
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+Stanley consistently demonstrated professionalism, initiative, and excellent communication skills while supporting operations and customer coordination.
+</p>
+
+<div class="testimonial-profile">
+
+<div class="testimonial-image-wrap">
+<img src="gabriel.jpg" alt="Gabriel Ohworuka">
+</div>
+
+<div class="client-info">
+<h4>Gabriel Ohworuka</h4>
+<p>CEO at Herriel Foods</p>
+</div>
+
+</div>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="linkedin-badge">
+<i class="fa-brands fa-linkedin"></i>
+Verified LinkedIn Recommendation
+</a>
+
+</div>
+
+<div class="testimonial-card glow-card">
+
+<div class="testimonial-icon">
+<i class="fa-solid fa-quote-left"></i>
+</div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+His professionalism, executive coordination skills, and workflow management contributed greatly to successful collaboration and project delivery.
+</p>
+
+<div class="testimonial-profile">
+
+<div class="testimonial-image-wrap">
+<img src="charles.jpg" alt="Charles Walton">
+</div>
+
+<div class="client-info">
+<h4>Charles Walton</h4>
+<p>Senior Financial & Revenue Analyst</p>
+</div>
+
+</div>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396/details/recommendations/" target="_blank" class="linkedin-badge">
+<i class="fa-brands fa-linkedin"></i>
+Verified LinkedIn Recommendation
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-box glow-card">
+
+<div class="section-tag">CONTACT</div>
+
+<h2 class="section-title">
+Let's Work Together
+</h2>
+
+<p class="section-text">
+Looking for a reliable AI-powered Executive Virtual Assistant to support your business operations, scheduling, communication systems, and workflow coordination? Let’s connect.
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card glow-card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<a href="mailto:st2walton1@gmail.com">
+st2walton1@gmail.com
+</a>
+</div>
+
+<div class="contact-card glow-card">
+<i class="fa-brands fa-linkedin"></i>
+<h3>LinkedIn</h3>
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank">
+Connect Professionally
+</a>
+</div>
+
+<div class="contact-card glow-card">
+<i class="fa-brands fa-github"></i>
+<h3>GitHub</h3>
+<a href="https://github.com/st2walton1" target="_blank">
+github.com/st2walton1
+</a>
+</div>
+
+</div>
+
+<div class="contact-buttons">
+
+<a href="mailto:st2walton1@gmail.com" class="btn primary-btn">
+<i class="fa-solid fa-paper-plane"></i>
+Send Email
+</a>
+
+<a href="https://calendly.com/st2walton1/discovery-call-with-stanley-walton" target="_blank" class="btn discovery-btn">
+<i class="fa-solid fa-calendar-days"></i>
+Book Discovery Call
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
 
 <footer>
 
-<p align="center">
-Stanley Walton — AI-Assisted Administrative & Executive Virtual Assistant focused on productivity, organization, business support, and professional digital solutions.</p>
+<div class="container">
 
-<p align="left">&nbsp;</p>
-
-<p align="left">&nbsp;</p>
+<div class="footer-content">
 
 <p>
-© 2026 Stanley Walton. All Rights Reserved.</p>
-</footer>
-</header>
+© 2026 Stanley Walton. All Rights Reserved.
+</p>
+
+<div class="footer-links">
+
+<a href="https://github.com/st2walton1" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com/in/stanley-walton-08a774396" target="_blank">LinkedIn</a>
+
+<a href="mailto:st2walton1@gmail.com">Email</a>
+
 </div>
 
-<!-- Sticky Mobile Hire Me Button -->
+</div>
 
-<a href="contact.html" class="sticky-hire-btn">
-💼 Hire Me
+</div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a href="https://wa.me/2349019095734?text=Hello%20Stanley%2C%20I%20would%20like%20to%20hire%20you."
+class="floating-hire-btn"
+target="_blank"
+aria-label="Hire Me on WhatsApp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<span>Hire Me</span>
+
 </a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
+window.addEventListener('scroll', () => {
+
+    const header = document.querySelector('header');
+
+    if(window.scrollY > 50){
+        header.style.background = 'rgba(0,0,0,0.96)';
+    } else{
+        header.style.background = 'rgba(0,0,0,0.88)';
+    }
+
+});
+
+</script>
 
 </body>
 </html>
