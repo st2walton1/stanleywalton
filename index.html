@@ -342,6 +342,12 @@ nav{
     gap:20px;
 }
 
+
+
+
+
+
+
 .stat-card{
     background:rgba(255,255,255,0.03);
     border:1px solid var(--border);
@@ -556,9 +562,12 @@ nav{
 
 .cert-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,1fr);
     gap:28px;
     margin-top:50px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .cert-card{
@@ -598,6 +607,27 @@ nav{
     margin-top:18px;
     color:var(--primary-light) !important;
     font-weight:700;
+}
+<!-- ADD THIS CSS INSIDE YOUR EXISTING <style> SECTION -->
+<!-- Place it directly below the .cert-date CSS -->
+
+.cert-header{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.cert-logo{
+    width:58px;
+    height:58px;
+    object-fit:contain;
+    border-radius:14px;
+    background:#ffffff;
+    padding:8px;
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 0 20px rgba(255,255,255,0.04);
+    flex-shrink:0;
 }
 
 /* ===== TESTIMONIALS ===== */
@@ -990,6 +1020,94 @@ section{
     margin-bottom:30px;
     font-size:15px;
 }
+.cert-logo1,
+.cert-logo2,
+.cert-logo3,
+.cert-logo11,
+.cert-logo21,
+.cert-logo31,
+.cert-logo311{
+
+    width:140px;
+    height:80px;
+
+    object-fit:contain;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    padding:10px 14px;
+
+    border:1px solid rgba(255,255,255,0.10);
+
+    box-shadow:0 0 25px rgba(255,255,255,0.06);
+
+    flex-shrink:0;
+
+    display:block;
+}
+.linkedin-badge1 {    margin-top:22px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(96,165,250,0.25);
+    color:#93c5fd;
+    font-size:14px;
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.linkedin-badge2 {    margin-top:22px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(96,165,250,0.25);
+    color:#93c5fd;
+    font-size:14px;
+    font-weight:600;
+    transition:var(--transition);
+}
+.testimonial-image-wrap1 {    width:75px;
+    height:75px;
+    border-radius:22px;
+    padding:3px;
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    flex-shrink:0;
+}
+.testimonial-image-wrap2 {    width:75px;
+    height:75px;
+    border-radius:22px;
+    padding:3px;
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    flex-shrink:0;
+}
+.testimonial-image-wrap11 {width:75px;
+    height:75px;
+    border-radius:22px;
+    padding:3px;
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    flex-shrink:0;
+}
+.linkedin-badge3 {    margin-top:22px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    background:rgba(37,99,235,0.12);
+    border:1px solid rgba(96,165,250,0.25);
+    color:#93c5fd;
+    font-size:14px;
+    font-weight:600;
+    transition:var(--transition);
+}
 </style>
 </head>
 
@@ -1004,7 +1122,7 @@ section{
 <nav>
 
 <div class="logo-text">
-<h1><img src="logomain.png" width="63" height="53">Stanley <span>Walton</span></h1>
+<h1><img src="images/logomain.png" width="63" height="53">Stanley <span>Walton</span></h1>
 <p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
 </div>
 
@@ -1027,7 +1145,6 @@ section{
 </div>
 
 </nav>
-
 </div>
 
 </header>
@@ -1063,7 +1180,7 @@ Helping founders, executives, and remote teams improve productivity, streamline 
 <i class="fa-solid fa-envelope"></i>
 Hire Me</a>
 
-<a href="Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn">
+<a href="https://st2walton1.github.io/stanleywalton/Stanley_Walton_CV.pdf" target="_blank" class="btn secondary-btn">
 <i class="fa-solid fa-file-arrow-down"></i>
 Download Resume (PDF)</a>
 
@@ -1102,7 +1219,7 @@ Book Discovery Call</a></div>
 </div>
 
 <div class="hero-image">
-<img src="logo.png" alt="Stanley Walton Logo">
+<img src="images/logo.png" alt="Stanley Walton Logo">
 </div>
 
 </div>
@@ -1119,7 +1236,7 @@ Book Discovery Call</a></div>
 
 <div class="about-grid">
 
-<div class="about-image"><img src="Stanley.png" alt="Stanley Walton"></div>
+<div class="about-image"><img src="images/Stanley.png" alt="Stanley Walton"></div>
 
 <div>
 
@@ -1425,6 +1542,8 @@ Implemented AI-powered support systems using ChatGPT and automation tools to red
 
 </section>
 
+<!-- REPLACE ONLY YOUR CURRENT CERTIFICATIONS SECTION WITH THIS -->
+
 <!-- CERTIFICATIONS -->
 
 <section id="certifications">
@@ -1441,57 +1560,61 @@ Professional Development
 
 <div class="cert-card glow-card">
 
-<div class="cert-icon">
+<div class="cert-header">
+  <div class="cert-icon">
 <i class="fa-solid fa-graduation-cap"></i>
+</div>
+
 </div>
 
 <h3>Associate Degree in Computer Science (In Progress)</h3>
 
 <p>
-Currently studying Computer Science with a focus on digital technologies and software systems.
-</p>
-
-<p class="cert-date">
-University of the People<br>
-2025 – 2027
-</p>
-
+Currently studying Computer Science with a focus on digital technologies and software systems.</p>
+<p>&nbsp;</p>
+<p align="center" class="cert-date">
+<span class="cert-header"><img src="images/uopeople-logo.png"
+alt="University of the People Logo"
+class="cert-logo11"></span></p>
+<p align="center" class="cert-date">University of the People <br>
+  2025 – 2027</p>
+<div align="center"><a href="https://st2walton1.github.io/stanleywalton/UoPeople Admission Letter.pdf"
+target="_blank"
+class="linkedin-badge">
+  
+  <i class="fa-solid fa-circle-check"></i>
+  Verify Institution
+  
+  </a>
+  
 </div>
-
+</div>
 <div class="cert-card glow-card">
 
-<div class="cert-icon">
+<div class="cert-header">
+  <div class="cert-icon">
 <i class="fa-solid fa-robot"></i>
+</div>
+
 </div>
 
 <h3>Boost Your Career with AI</h3>
 
 <p>
-Professional training focused on AI productivity tools and digital workplace innovation.
-</p>
+Professional training focused on AI productivity tools and digital workplace innovation.</p>
+<p>&nbsp;</p>
+<p align="center" class="cert-date">
+<span class="cert-header"><img src="images/kiron-logo.png"
+alt="Kiron Open Higher Education Logo"
+class="cert-logo21"></span></p>
+<p align="center" class="cert-date">Kiron Open Higher Education  <a href="https://st2walton1.github.io/stanleywalton/Kiron Certificate - Boost Your Career with AI.pdf"
+target="_blank"
+class="linkedin-badge">
 
-<p class="cert-date">
-Kiron Open Higher Education
-</p>
+<i class="fa-solid fa-circle-check"></i>
+Verify Certificate
 
-</div>
-
-<div class="cert-card glow-card">
-
-<div class="cert-icon">
-<i class="fa-solid fa-users"></i>
-</div>
-
-<h3>Project Management Institute (PMI) Member</h3>
-
-<p>
-Active PMI member engaged in project management best practices and leadership development.
-</p>
-
-<p class="cert-date">
-Professional Membership
-</p>
-
+</a></p>
 </div>
 
 </div>
@@ -1583,9 +1706,7 @@ Stanley is <strong>highly organized, dependable, and professional</strong> in ha
 
 <div class="testimonial-profile">
 
-<div class="testimonial-image-wrap">
-<img src="esther.jpeg" alt="Ilonze Chizoba Esther">
-</div>
+<div class="testimonial-image-wrap"><img src="images/esther.jpeg" width="182" height="198"></div>
 
 <div class="client-info">
 <h4>Ilonze Chizoba Esther</h4>
@@ -1615,7 +1736,7 @@ Stanley consistently demonstrated<strong> professionalism, initiative, and excel
 <div class="testimonial-profile">
 
 <div class="testimonial-image-wrap">
-<img src="gabriel.jpg" alt="Gabriel Ohworuka">
+<img src="images/gabriel.jpg" alt="Gabriel Ohworuka">
 </div>
 
 <div class="client-info">
@@ -1646,8 +1767,7 @@ His <strong>professionalism, executive coordination skills, and workflow managem
 <div class="testimonial-profile">
 
 <div class="testimonial-image-wrap">
-<img src="charles.jpg" alt="Charles Walton">
-</div>
+<img src="images/charles.jpg" alt="Charles Walton"></div>
 
 <div class="client-info">
 <h4>Charles Walton</h4>
@@ -1715,8 +1835,7 @@ x.com/StanleyWal79099</a></div>
 <h3>GitHub</h3>
 <a href="https://github.com/st2walton1" target="_blank">
 github.com/st2walton1
-</a>
-</div>
+</a></div>
 </div>
 
 </div>
@@ -1731,9 +1850,7 @@ Send Email
 <a href="https://calendly.com/st2walton1/discovery-call-with-stanley-walton" target="_blank" class="btn discovery-btn">
 <i class="fa-solid fa-calendar-days"></i>
 Book Discovery Call
-</a>
-
-</div>
+</a></div>
 
 </div>
 
@@ -1750,7 +1867,7 @@ Book Discovery Call
 <div class="footer-content">
 
 <p>
-© 2026 Stanley Walton | AI-Powered Executive Operations Assistant
+© 2026 Stanley Walton | AI-Powered Executive Operations Assistant 
 </p>
 
 <div class="footer-links">
@@ -1779,6 +1896,7 @@ aria-label="Hire Me on WhatsApp">
 <i class="fa-brands fa-whatsapp"></i>
 
 <span>Hire Me</span>
+
 
 </a>
 
