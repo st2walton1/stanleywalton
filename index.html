@@ -348,6 +348,8 @@ nav{
 
 
 
+
+
 .stat-card{
     background:rgba(255,255,255,0.03);
     border:1px solid var(--border);
@@ -1028,24 +1030,49 @@ section{
 .cert-logo31,
 .cert-logo311{
 
-    width:140px;
-    height:80px;
+    width:100%;
+    max-width:180px;
+
+    height:95px;
 
     object-fit:contain;
 
-    border-radius:16px;
+    border-radius:18px;
 
     background:#ffffff;
 
-    padding:10px 14px;
+    padding:12px 18px;
 
-    border:1px solid rgba(255,255,255,0.10);
+    border:1px solid rgba(255,255,255,0.12);
 
-    box-shadow:0 0 25px rgba(255,255,255,0.06);
+    box-shadow:
+    0 0 30px rgba(255,255,255,0.08),
+    0 0 12px rgba(37,99,235,0.15);
 
     flex-shrink:0;
 
     display:block;
+
+    margin:0 auto;
+
+    transition:all 0.35s ease;
+}
+
+/* Hover Effect */
+
+.cert-card:hover .cert-logo1,
+.cert-card:hover .cert-logo2,
+.cert-card:hover .cert-logo3,
+.cert-card:hover .cert-logo11,
+.cert-card:hover .cert-logo21,
+.cert-card:hover .cert-logo31,
+.cert-card:hover .cert-logo311{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 35px rgba(96,165,250,0.20),
+    0 0 15px rgba(255,255,255,0.12);
 }
 .linkedin-badge1 {    margin-top:22px;
     display:inline-flex;
@@ -1094,19 +1121,6 @@ section{
     padding:3px;
     background:linear-gradient(135deg,#60a5fa,#2563eb);
     flex-shrink:0;
-}
-.linkedin-badge3 {    margin-top:22px;
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 18px;
-    border-radius:50px;
-    background:rgba(37,99,235,0.12);
-    border:1px solid rgba(96,165,250,0.25);
-    color:#93c5fd;
-    font-size:14px;
-    font-weight:600;
-    transition:var(--transition);
 }
 </style>
 </head>
@@ -1587,6 +1601,7 @@ class="linkedin-badge">
   
   </a></div>
 </div>
+
 <div class="cert-card glow-card">
 
 <div class="cert-header">
@@ -1601,7 +1616,7 @@ class="linkedin-badge">
 <p>
 Professional training focused on AI productivity tools and digital workplace innovation.</p>
 <p>&nbsp;</p>
-<p align="center" class="cert-date">
+<p align="left" class="cert-date">
 <span class="cert-header"><img src="images/kiron-logo.png"
 alt="Kiron Open Higher Education Logo"
 class="cert-logo21"></span></p>
@@ -1615,6 +1630,7 @@ Verify Certificate
 </a></p>
 </div>
 
+
 </div>
 
 </div>
@@ -1627,7 +1643,7 @@ Verify Certificate
 <div class="section-tag">CURRENTLY LEARNING</div>
 
 <h2 class="section-title">
-Professional Growth & AI Development
+Professional Growth & AI Development 
 </h2>
 
 <div class="services-grid">
