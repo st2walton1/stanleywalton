@@ -662,6 +662,7 @@ nav{
 }
 
 .cert-logo{
+.cert-logo{
     width:58px;
     height:58px;
     object-fit:contain;
@@ -671,6 +672,27 @@ nav{
     border:1px solid rgba(255,255,255,0.08);
     box-shadow:0 0 20px rgba(255,255,255,0.04);
     flex-shrink:0;
+}
+}
+
+/* View All Certifications Button */
+
+.cert-btn-container{
+    text-align:center;
+    margin-top:40px;
+}
+
+.cert-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 28px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#ffffff;
+    font-weight:700;
+    transition:all 0.3s ease;
+    box-shadow:0 0 25px rgba(37,99,235,0.25);
 }
 
 /* ===== TESTIMONIALS ===== */
@@ -798,6 +820,8 @@ display:grid;
 
 .contact-card:hover{
     transform:translateY(-5px);
+
+
     border-color:var(--primary);
 }
 
@@ -1249,8 +1273,7 @@ section{
 <img src="images/logomain.png" alt="Stanley Walton Logo">
 
 <h1>
-Stanley <span>Walton</span>
-</h1>
+Stanley <span>Walton</span></h1>
 
 
 
@@ -1813,10 +1836,10 @@ alt="AI Productivity Support">
 
 <div class="container">
 
-<div class="section-tag">CERTIFICATIONS</div>
+<div class="section-tag">FEATURED CERTIFICATIONS</div>
 
 <h2 class="section-title">
-Professional Development
+Professional Development & Education
 </h2>
 
 <div class="cert-grid">
@@ -1830,8 +1853,8 @@ Professional Development
 
 </div>
 
-<h3>University of the People</h3>
-<h3>Associate Degree in Computer Science (In Progress) </h3>
+<h3>Associate Degree in Computer Science (In Progress)</h3>
+
 <p>
 Currently studying Computer Science with a focus on digital technologies and software systems.</p>
 <p>&nbsp;</p>
@@ -1860,8 +1883,8 @@ class="linkedin-badge">
 
 </div>
 
-<h3>Kiron Open Higher Education</h3>
 <h3>Boost Your Career with AI</h3>
+
 <p>
 Professional training focused on AI productivity tools and digital workplace innovation.</p>
 <p>&nbsp;</p>
@@ -1892,6 +1915,14 @@ Verify Certificate
 </div>
 
 </section>
+<div class="cert-btn-container">
+
+    <a href="certifications.html"
+       target="_top"
+       class="cert-btn">
+
+       <i class="fa-solid fa-award"></i>
+       View Certifications Portfolio    </a></div>
 <section id="learning">
 
 <div class="container">
@@ -1938,13 +1969,22 @@ Learning foundational Python concepts for automation, AI operations support, and
 <h3>AI Operations & Evaluation</h3>
 
 <p>
-Expanding knowledge in AI output evaluation, annotation quality assurance, and workflow systems management.
-</p>
+Expanding knowledge in AI output evaluation, annotation quality assurance, and workflow systems management.</p>
 
 </div>
 
 </div>
+<div class="cert-btn-container">
+    <a href="Stanley_Walton_CV.pdf"
+       target="_blank"
+       class="cert-btn">
+       <i class="fa-solid fa-award"></i>
+       View Certifications Portfolio
+    </a>
+</div>
 
+</div>
+</section>
 </div>
 
 </section>
@@ -2137,7 +2177,7 @@ Book Discovery Call
 <div class="footer-content">
 
 <p>
-© 2026 Stanley Walton | AI-Powered Executive Operations Assistant 
+© 2026 Stanley Walton | AI-Powered Executive Operations Assistant  
 </p>
 
 <div class="footer-links">

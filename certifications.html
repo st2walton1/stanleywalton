@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stanley Walton | Certifications Portfolio</title>
+
+<meta name="description" content="Professional Certifications and Educational Achievements of Stanley Walton">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+    --primary:#2563eb;
+    --primary-light:#60a5fa;
+    --dark:#050505;
+    --card:#111827;
+    --text:#ffffff;
+    --muted:#cbd5e1;
+    --border:rgba(255,255,255,0.08);
+    --transition:0.35s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:min(92%,1200px);
+    margin:auto;
+}
+
+/* HEADER */
+.logo-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.header-logo{
+    width:65px;
+    height:auto;
+}
+
+.logo-text h1{
+    margin:0;
+    font-size:2rem;
+    font-weight:900;
+}
+
+.logo-text span{
+    color:var(--primary-light);
+}
+
+.logo-text p{
+    margin:0;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#94a3b8;
+    text-transform:uppercase;
+}
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(0,0,0,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.header-content{
+    min-height:90px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:900;
+}
+
+.logo span{
+    color:var(--primary-light);
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 24px;
+    border-radius:50px;
+    background:var(--primary);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+
+.back-btn:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:100px 0 70px;
+}
+
+.hero h1{
+    font-size:clamp(2.5rem,6vw,4.5rem);
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
+    font-weight:800;
+}
+
+/* CERTIFICATE GRID */
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-bottom:80px;
+}
+
+.cert-card{
+    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+
+.cert-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+.cert-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.cert-content{
+    padding:30px;
+}
+
+.cert-content h3{
+    margin-bottom:10px;
+    font-size:1.25rem;
+}
+
+.cert-provider{
+    color:#60a5fa;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.cert-content p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.cert-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+
+.cert-btn:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid rgba(255,255,255,0.08);
+    padding:40px 0;
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo-brand{
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.header-content{
+    flex-direction:column;
+    padding:20px 0;
+}
+
+.hero{
+    padding:70px 0 50px;
+}
+
+}
+
+.cert-btn1 {    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+.cert-card1 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+.cert-btn2 {    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+.cert-card2 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+.cert-btn3 {    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+.cert-card3 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+.cert-btn4 {    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+.cert-card4 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+.cert-btn5 {    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 20px;
+    border-radius:50px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:var(--transition);
+}
+.cert-card5 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:var(--transition);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="header-content">
+
+<div class="logo-brand">
+
+    <img src="images/logomain.png"
+         alt="Stanley Walton Logo"
+         class="header-logo">
+
+    <div class="logo-text">
+        <h1>Stanley <span>Walton</span></h1>
+        <p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
+    </div>
+
+</div>
+
+<a href="index.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i>
+Back to Portfolio
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Certifications Portfolio</h1>
+
+<p>
+Professional certifications, AI training programs, educational achievements, and career development courses supporting my work as an AI-Powered Executive Virtual Assistant.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Featured Certifications</h2>
+
+<div class="cert-grid">
+
+<!-- CERTIFICATE 1 -->
+<div class="cert-card5">
+  <div class="cert-content">
+    <h3>Generative AI for Productivity</h3>
+    <div class="cert-provider"> LinkedIn Learning</div>
+    <p> <p>
+<p>
+Applied generative AI tools to automate administrative tasks, streamline workflows, create content faster, and increase operational efficiency for business leaders and teams.
+</p></p></p>
+    <a href="https://www.linkedin.com/learning/certificates/f36bfd783a36e56738fc1e7601ee634d4fa75ace031fa6521548192b5b59c217/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BveG4zvvgR2q%2FsyCy1kpRfQ%3D%3D"
+target="_blank"
+class="cert-btn5"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+</div>
+<!-- CERTIFICATE 2 -->
+<div class="cert-card4">
+  <div class="cert-content">
+    <h3>How to Research and Write Using Generative AI Tools</h3>
+    <div class="cert-provider"> LinkedIn Learning</div>
+    <p> <p>
+Developed skills in conducting efficient research, organizing information, and creating high-quality written content using generative AI tools while maintaining accuracy and professionalism.
+</p> </p>
+    <a href="https://www.linkedin.com/learning/certificates/41250fc822bf9c3716da6ce7bc7154b291bcec3099d3cbeb71bdaf1931b7f2c6/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bl4FX1dNLR%2FuLYxlvK6gIyA%3D%3D"
+target="_blank"
+class="cert-btn4"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+</div>
+<!-- CERTIFICATE 3 -->
+<div class="cert-card3">
+  <div class="cert-content">
+    <h3>Copilot in Outlook: Maximize Your Workday Efficiency</h3>
+    <div class="cert-provider">LinkedIn Learning</div>
+    <p>
+    <p>    
+    <p>
+Developed advanced email management and communication skills using Microsoft Copilot to support executive scheduling, inbox organization, and meeting coordination.
+</p></p></p>
+    <a href="https://www.linkedin.com/learning/certificates/2a60b53b364d75c8f8f429b3c28b0eefebcace2328f733ddcc372ddbdf2ba151/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bl4FX1dNLR%2FuLYxlvK6gIyA%3D%3D"
+target="_blank"
+class="cert-btn3"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+</div>
+<!-- CERTIFICATE 4 -->
+<div class="cert-card1">
+  <div class="cert-content">
+    <h3>Time Management </h3>
+    <div class="cert-provider">LinkedIn Learning</div>
+    <p> <p>
+Strengthened skills in prioritization, planning, scheduling, and productivity techniques to effectively manage workloads, deadlines, and multiple projects simultaneously.
+</p></p>
+    <a href="https://www.linkedin.com/learning/certificates/f49642ab295d8a014a9405fa838641f29944179a3d9d59b5185ddf66fae76d79/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bl4FX1dNLR%2FuLYxlvK6gIyA%3D%3D"
+target="_blank"
+class="cert-btn1"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+</div>
+<!-- CERTIFICATE 5 -->
+<div class="cert-card2">
+  <div class="cert-content">
+    <h3>AI in Project Management Foundations</h3>
+    <div class="cert-provider">LinkedIn Learning</div>
+    <p> <p>
+<p>
+Learned to integrate AI-powered tools into project coordination, task tracking, workflow automation, and performance monitoring to improve project outcomes.
+</p>
+</p></p>
+    <a href="https://www.linkedin.com/learning/certificates/234db2566c3bd771c2f4950321d053ff7bed2abd055318accdfbd3dfe89e3168/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BveG4zvvgR2q%2FsyCy1kpRfQ%3D%3D"
+target="_blank"
+class="cert-btn2"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+</div>
+<!-- EDUCATION -->
+
+<div class="cert-card">
+  <div class="cert-content">
+
+<h3>Customer Experience (CX) for Business Success</h3>
+
+<div class="cert-provider">
+HP LiFE</div>
+
+<p>
+<p>
+Learned customer-centric strategies for improving client satisfaction, building strong relationships, enhancing service delivery, and driving long-term business success.
+</p></p>
+
+<a href="https://www.life-global.org/certificate/8f1818ca-d284-4927-8a7e-e087b081b04e"
+target="_blank"
+class="cert-btn">
+
+<i class="fa-solid fa-graduation-cap"></i>
+Verify Certificate </a></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Stanley Walton | AI-Powered Executive Virtual Assistant
+
+</footer>
+
+</body>
+</html>
