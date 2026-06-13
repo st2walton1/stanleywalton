@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta property="og:title" content="Stanley Walton | AI-Powered Executive Virtual Assistant">
 
+<meta property="og:description" content="AI-Powered Executive Virtual Assistant helping businesses streamline workflows, improve productivity, and optimize operations through digital support systems.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://st2walton1.github.io/stanleywalton/">
+
+<meta property="og:image" content="https://st2walton1.github.io/stanleywalton/preview-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Stanley Walton | AI-Powered Executive Virtual Assistant">
+
+<meta name="twitter:description" content="AI-powered executive support, workflow optimization, scheduling, customer communication, and digital productivity systems.">
+
+<meta name="twitter:image" content="https://st2walton1.github.io/stanleywalton/preview-image.jpg">
+<meta name="theme-color" content="#2563eb">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="logo.png">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>Stanley Walton | Certifications Portfolio</title>
 
@@ -148,16 +172,12 @@ header{
     font-weight:800;
 }
 
-/* CERTIFICATE GRID */
-
 .cert-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
     margin-bottom:80px;
-}
-
-.cert-card{
+}.cert-card{
     background:linear-gradient(to bottom right,#0b0b0b,#111827);
     border:1px solid var(--border);
     border-radius:28px;
@@ -166,6 +186,66 @@ header{
 }
 
 .cert-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+
+/* ===== FLOATING WHATSAPP HIRE ME BUTTON ===== */
+
+.floating-hire-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:99999;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#25D366;
+    color:#ffffff !important;
+    padding:15px 22px;
+    border-radius:60px;
+    font-size:16px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(37,211,102,0.35);
+    transition:all .3s ease;
+    animation:whatsappPulse 2s infinite;
+}
+
+.floating-hire-btn:hover{
+    transform:translateY(-4px);
+    color:#ffffff !important;
+}
+
+.floating-hire-btn i{
+    font-size:28px;
+}
+
+@keyframes whatsappPulse{
+    0%{
+        box-shadow:0 0 0 0 rgba(37,211,102,.6);
+    }
+    70%{
+        box-shadow:0 0 0 18px rgba(37,211,102,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+@media(max-width:480px){
+    .floating-hire-btn span{
+        display:none;
+    }
+
+    .floating-hire-btn{
+        width:60px;
+        height:60px;
+        padding:0;
+        justify-content:center;
+        border-radius:50%;
+    }
+}
     transform:translateY(-8px);
     border-color:var(--primary);
 }
@@ -365,6 +445,7 @@ Back to Portfolio
 
 <section class="hero">
 
+
 <div class="container">
 
 <h1>Certifications Portfolio</h1>
@@ -486,5 +567,15 @@ Verify Certificate </a></div>
 
 </footer>
 
+
+<a href="https://wa.me/2349019095734?text=Hello%20Stanley,%20I%20would%20like%20to%20hire%20you."
+   class="floating-hire-btn"
+   target="_blank"
+   rel="noopener">
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Hire Me</span>
+
+</a>
 </body>
 </html>
