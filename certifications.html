@@ -193,23 +193,84 @@ header{
 
 .btn{
     flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    font-weight:700;
+    font-size:13px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:120%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    transition:.6s;
+}
+
+.btn:hover::before{
+    left:120%;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+    flex:1;
     text-align:center;
     padding:10px;
     border-radius:25px;
     font-weight:700;
     font-size:13px;
     text-decoration:none;
+
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .btn-verify{background:var(--primary);color:#fff;}
-.btn-preview{background:#1f2937;color:#fff;}
+.btn-preview{
+    background:#1f2937;
+    color:#fff;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.btn-preview:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+}
 .btn-download{background:#111827;border:1px solid var(--border);color:#fff;}
 
-.floating-hire-btn{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25D366;
+
     color:#fff;
     padding:14px 18px;
     border-radius:50px;
@@ -349,7 +410,12 @@ header{
 
     <div class="btn-group">
       <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/e05a9bb7f443179d12f5f847c0d1c35ce4b12ba7a07bcf6925fa856a1f5896a8" target="_blank">Verify</a>
-      <a class="btn btn-preview" onclick="openModal('cert1')">Preview</a>
+      <button
+    type="button"
+    class="btn btn-preview"
+    onclick="openModal('cert1')">
+    <i class="fa-solid fa-eye"></i> Preview
+</button>
       <a href="https://st2walton1.github.io/stanleywalton/Certificates/What Is Generative AI.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
   </div>
 </div>
@@ -576,6 +642,10 @@ function openModal(certId) {
 };
 
     let cert = data[certId];
+	if(!cert){
+    alert("Certificate not found.");
+    return;
+}
 
     document.getElementById("modalTitle").innerText = cert.title;
     document.getElementById("modalImage").src = cert.img;
