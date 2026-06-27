@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta property="og:title" content="Stanley Walton | AI-Powered Executive Virtual Assistant">
 
-<meta property="og:description" content="AI-Powered Executive Virtual Assistant helping businesses streamline workflows, improve productivity, and optimize operations through digital support systems.">
-
-<meta property="og:type" content="website">
-
-<meta property="og:url" content="https://st2walton1.github.io/stanleywalton/">
-
-<meta property="og:image" content="https://st2walton1.github.io/stanleywalton/preview-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Stanley Walton | AI-Powered Executive Virtual Assistant">
-
-<meta name="twitter:description" content="AI-powered executive support, workflow optimization, scheduling, customer communication, and digital productivity systems.">
-
-<meta name="twitter:image" content="https://st2walton1.github.io/stanleywalton/preview-image.jpg">
-<meta name="theme-color" content="#2563eb">
-
-<!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="shortcut icon" href="logo.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>Stanley Walton | Certifications Portfolio</title>
 
 <meta name="description" content="Professional Certifications and Educational Achievements of Stanley Walton">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta property="og:title" content="Stanley Walton | Certifications Portfolio">
+<meta property="og:description" content="AI-powered certifications, training programs, and professional development portfolio.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://st2walton1.github.io/stanleywalton/">
+<meta property="og:image" content="https://st2walton1.github.io/stanleywalton/preview-image.jpg">
 
+<meta name="twitter:card" content="summary_large_image">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
@@ -47,24 +30,15 @@
     --text:#ffffff;
     --muted:#cbd5e1;
     --border:rgba(255,255,255,0.08);
-    --transition:0.35s ease;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
     font-family:'Inter',sans-serif;
     background:#050505;
-    color:#ffffff;
-    line-height:1.7;
+    color:#fff;
+    line-height:1.6;
 }
 
 .container{
@@ -73,340 +47,257 @@ body{
 }
 
 /* HEADER */
-.logo-brand{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.header-logo{
-    width:65px;
-    height:auto;
-}
-
-.logo-text h1{
-    margin:0;
-    font-size:2rem;
-    font-weight:900;
-}
-
-.logo-text span{
-    color:var(--primary-light);
-}
-
-.logo-text p{
-    margin:0;
-    font-size:11px;
-    letter-spacing:2px;
-    color:#94a3b8;
-    text-transform:uppercase;
-}
 header{
     position:sticky;
     top:0;
     z-index:999;
-    background:rgba(0,0,0,0.92);
+    background:rgba(0,0,0,0.9);
     backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-bottom:1px solid var(--border);
 }
 
 .header-content{
-    min-height:90px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:20px;
+    padding:18px 0;
 }
 
-.logo{
-    font-size:2rem;
+.logo-text h1{
+    font-size:1.8rem;
     font-weight:900;
 }
 
-.logo span{
-    color:var(--primary-light);
-}
+.logo-text span{color:var(--primary-light);}
+.logo-text p{font-size:11px;color:#94a3b8;text-transform:uppercase;}
 
 .back-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:14px 24px;
-    border-radius:50px;
     background:var(--primary);
+    padding:12px 20px;
+    border-radius:50px;
     color:#fff;
     text-decoration:none;
     font-weight:700;
-    transition:var(--transition);
-}
-
-.back-btn:hover{
-    transform:translateY(-3px);
-    background:#1d4ed8;
 }
 
 /* HERO */
-
 .hero{
     text-align:center;
-    padding:100px 0 70px;
+    padding:90px 0 40px;
 }
 
 .hero h1{
-    font-size:clamp(2.5rem,6vw,4.5rem);
+    font-size:clamp(2.2rem,5vw,4rem);
     font-weight:900;
-    margin-bottom:20px;
 }
 
 .hero p{
-    max-width:850px;
-    margin:auto;
     color:#cbd5e1;
-    font-size:18px;
+    max-width:800px;
+    margin:15px auto 0;
 }
 
-.section-title{
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:50px;
-    font-weight:800;
+/* TOOLBAR */
+.toolbar{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:40px 0;
 }
 
+.search-box{
+    padding:12px 18px;
+    border-radius:30px;
+    border:1px solid var(--border);
+    background:#0b0b0b;
+    color:#fff;
+    width:260px;
+}
+
+.filter-btn{
+    padding:10px 16px;
+    border-radius:30px;
+    border:1px solid var(--border);
+    background:#111827;
+    color:#fff;
+    cursor:pointer;
+}
+
+.filter-btn.active{
+    background:var(--primary);
+}
+
+/* GRID */
 .cert-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-    margin-bottom:80px;
-}.cert-card{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding-bottom:80px;
+}
+
+/* CARD */
+.cert-card{
     background:linear-gradient(to bottom right,#0b0b0b,#111827);
     border:1px solid var(--border);
-    border-radius:28px;
+    border-radius:20px;
     overflow:hidden;
-    transition:var(--transition);
+    transition:0.3s ease;
 }
 
 .cert-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
     border-color:var(--primary);
 }
 
-/* ===== FLOATING WHATSAPP HIRE ME BUTTON ===== */
+.cert-body{
+    padding:22px;
+}
+
+.cert-title{
+    font-size:1.2rem;
+    font-weight:800;
+    margin-bottom:5px;
+}
+
+.cert-provider{
+    color:var(--primary-light);
+    font-weight:600;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.cert-desc{
+    color:#cbd5e1;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    padding:5px 10px;
+    background:#16a34a;
+    color:#fff;
+    font-size:11px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+/* BUTTONS */
+.btn-group{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    flex:1;
+    text-align:center;
+    padding:10px;
+    border-radius:25px;
+    font-weight:700;
+    font-size:13px;
+    text-decoration:none;
+}
+
+.btn-verify{background:var(--primary);color:#fff;}
+.btn-preview{background:#1f2937;color:#fff;}
+.btn-download{background:#111827;border:1px solid var(--border);color:#fff;}
 
 .floating-hire-btn{
     position:fixed;
     right:20px;
     bottom:20px;
-    z-index:99999;
-    display:flex;
-    align-items:center;
-    gap:10px;
     background:#25D366;
-    color:#ffffff !important;
-    padding:15px 22px;
-    border-radius:60px;
-    font-size:16px;
-    font-weight:700;
-    text-decoration:none;
-    box-shadow:0 10px 25px rgba(37,211,102,0.35);
-    transition:all .3s ease;
-    animation:whatsappPulse 2s infinite;
-}
-
-.floating-hire-btn:hover{
-    transform:translateY(-4px);
-    color:#ffffff !important;
-}
-
-.floating-hire-btn i{
-    font-size:28px;
-}
-
-@keyframes whatsappPulse{
-    0%{
-        box-shadow:0 0 0 0 rgba(37,211,102,.6);
-    }
-    70%{
-        box-shadow:0 0 0 18px rgba(37,211,102,0);
-    }
-    100%{
-        box-shadow:0 0 0 0 rgba(37,211,102,0);
-    }
-}
-
-@media(max-width:480px){
-    .floating-hire-btn span{
-        display:none;
-    }
-
-    .floating-hire-btn{
-        width:60px;
-        height:60px;
-        padding:0;
-        justify-content:center;
-        border-radius:50%;
-    }
-}
-    transform:translateY(-8px);
-    border-color:var(--primary);
-}
-
-.cert-card img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
-}
-
-.cert-content{
-    padding:30px;
-}
-
-.cert-content h3{
-    margin-bottom:10px;
-    font-size:1.25rem;
-}
-
-.cert-provider{
-    color:#60a5fa;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-.cert-content p{
-    color:#cbd5e1;
-    margin-bottom:20px;
-}
-
-.cert-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
-    background:#2563eb;
     color:#fff;
-    text-decoration:none;
+    padding:14px 18px;
+    border-radius:50px;
     font-weight:700;
-    transition:var(--transition);
+    text-decoration:none;
+}
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
 }
 
-.cert-btn:hover{
-    background:#1d4ed8;
-}
-
-/* FOOTER */
-
-footer{
-    border-top:1px solid rgba(255,255,255,0.08);
-    padding:40px 0;
-    text-align:center;
-    color:#94a3b8;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.logo-brand{
+/* ===== PREMIUM MODAL ===== */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+    z-index:99999;
+    align-items:center;
     justify-content:center;
-    text-align:center;
-    flex-direction:column;
 }
 
-.header-content{
-    flex-direction:column;
-    padding:20px 0;
+.modal-content{
+    background:rgba(17,24,39,0.95);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    width:90%;
+    max-width:800px;
+    padding:20px;
+    animation:fadeIn 0.3s ease;
 }
 
-.hero{
-    padding:70px 0 50px;
+@keyframes fadeIn{
+    from{transform:scale(0.9);opacity:0;}
+    to{transform:scale(1);opacity:1;}
 }
 
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
 }
 
-.cert-btn1 {    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
+.close-btn{
+    font-size:28px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.modal-content img{
+    width:100%;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+.modal-info{
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+.copy-btn{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    border-radius:25px;
     background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.verify-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    border-radius:25px;
+    background:#16a34a;
     color:#fff;
     text-decoration:none;
     font-weight:700;
-    transition:var(--transition);
-}
-.cert-card1 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
-    border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
-    transition:var(--transition);
-}
-.cert-btn2 {    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    transition:var(--transition);
-}
-.cert-card2 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
-    border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
-    transition:var(--transition);
-}
-.cert-btn3 {    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    transition:var(--transition);
-}
-.cert-card3 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
-    border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
-    transition:var(--transition);
-}
-.cert-btn4 {    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    transition:var(--transition);
-}
-.cert-card4 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
-    border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
-    transition:var(--transition);
-}
-.cert-btn5 {    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:12px 20px;
-    border-radius:50px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    transition:var(--transition);
-}
-.cert-card5 {    background:linear-gradient(to bottom right,#0b0b0b,#111827);
-    border:1px solid var(--border);
-    border-radius:28px;
-    overflow:hidden;
-    transition:var(--transition);
 }
 </style>
 </head>
@@ -414,144 +305,173 @@ footer{
 <body>
 
 <header>
-
-<div class="container">
-
-<div class="header-content">
-
-<div class="logo-brand">
-
-    <img src="images/logomain.png"
-         alt="Stanley Walton Logo"
-         class="header-logo">
-
+<div class="container header-content">
     <div class="logo-text">
         <h1>Stanley <span>Walton</span></h1>
         <p>AI-POWERED EXECUTIVE VIRTUAL ASSISTANT</p>
     </div>
 
+    <a class="back-btn" href="index.html">
+        <i class="fa fa-arrow-left"></i> Back
+    </a>
 </div>
-
-<a href="index.html" class="back-btn">
-<i class="fa-solid fa-arrow-left"></i>
-Back to Portfolio
-</a>
-
-</div>
-
-</div>
-
 </header>
 
 <section class="hero">
+    <div class="container">
+        <h1>Certifications Portfolio</h1>
+        <p>Verified professional certifications, AI training programs, and career development achievements.</p>
+    </div>
 
-<div class="container">
-  <h1>Certifications Portfolio</h1>
-<p>
-Professional certifications, AI training programs, educational achievements, and career development courses supporting my work as an AI-Powered Executive Virtual Assistant.
-</p>
+    <div class="container toolbar">
+        <input class="search-box" id="searchInput" placeholder="Search certificates...">
 
-</div>
-
+        <button class="filter-btn active" onclick="filter('all')">All</button>
+        <button class="filter-btn" onclick="filter('AI')">AI</button>
+        <button class="filter-btn" onclick="filter('LinkedIn')">LinkedIn</button>
+        <button class="filter-btn" onclick="filter('Business')">Business</button>
+    </div>
 </section>
 
 <section>
-
-<div class="container">
-
-<h2 class="section-title">Featured Certifications</h2>
-
-<div class="cert-grid">
+<div class="container cert-grid" id="certGrid">
 
 <!-- CERTIFICATE 1 -->
-<div class="cert-card5">
-  <div class="cert-content">
-    <h3>Generative AI for Productivity</h3>
-    <div class="cert-provider"> LinkedIn Learning</div>
-    <p>
-<p>
-Applied generative AI tools to automate administrative tasks, streamline workflows, create content faster, and increase operational efficiency for business leaders and teams.
-</p>
-    <a href="https://www.linkedin.com/learning/certificates/e05a9bb7f443179d12f5f847c0d1c35ce4b12ba7a07bcf6925fa856a1f5896a8?trk=share_certificate"
-target="_blank"
-class="cert-btn"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+<div class="cert-card" data-category="AI LinkedIn">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">Generative AI for Productivity</div>
+    <div class="cert-provider">LinkedIn Learning</div>
+
+    <div class="cert-desc">
+      Applied generative AI tools to automate workflows, improve productivity, and support executive operations.
+    </div>
+
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/e05a9bb7f443179d12f5f847c0d1c35ce4b12ba7a07bcf6925fa856a1f5896a8" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert1')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/What Is Generative AI.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
+
 <!-- CERTIFICATE 2 -->
-<div class="cert-card4">
-  <div class="cert-content">
-    <h3>How to Research and Write Using Generative AI Tools</h3>
-    <div class="cert-provider"> LinkedIn Learning</div>
-    <p>
-Developed skills in conducting efficient research, organizing information, and creating high-quality written content using generative AI tools while maintaining accuracy and professionalism.
-</p>
-    <a href="https://www.linkedin.com/learning/certificates/94c1d90be7e3b185aaae88f2a44609d65f891c12becdd3d8b29fcff3bea8e4bf?trk=share_certificate"
-target="_blank"
-class="cert-btn"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+<div class="cert-card" data-category="AI LinkedIn">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">Research & Writing with Generative AI</div>
+    <div class="cert-provider">LinkedIn Learning</div>
+
+    <div class="cert-desc">
+      Improved research efficiency and content creation using generative AI tools while maintaining accuracy.
+    </div>
+
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/94c1d90be7e3b185aaae88f2a44609d65f891c12becdd3d8b29fcff3bea8e4bf" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert2')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/How to Research and Write Using Generative AI Tools.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
+
 <!-- CERTIFICATE 3 -->
-<div class="cert-card">
-  <div class="cert-content">
-    <h3>Copilot in Outlook: Maximize Your Workday Efficiency</h3>
+<div class="cert-card" data-category="AI LinkedIn">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">Copilot in Outlook Productivity</div>
     <div class="cert-provider">LinkedIn Learning</div>
-    <p>
-Developed advanced email management and communication skills using Microsoft Copilot to support executive scheduling, inbox organization, and meeting coordination.
-</p>
-    <a href="https://www.linkedin.com/learning/certificates/2a60b53b364d75c8f8f429b3c28b0eefebcace2328f733ddcc372ddbdf2ba151/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bl4FX1dNLR%2FuLYxlvK6gIyA%3D%3D"
-target="_blank"
-class="cert-btn"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+
+    <div class="cert-desc">
+      Enhanced email management, scheduling, and executive communication using Microsoft Copilot.
+    </div>
+
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/2a60b53b364d75c8f8f429b3c28b0eefebcace2328f733ddcc372ddbdf2ba151" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert3')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/Copilot in Outlook Maximize Your Workday Efficiency.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
+
 <!-- CERTIFICATE 4 -->
-<div class="cert-card">
-  <div class="cert-content">
-    <h3>Time Management </h3>
+<div class="cert-card" data-category="Business LinkedIn">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">Time Management Mastery</div>
     <div class="cert-provider">LinkedIn Learning</div>
-    <p>
-Strengthened skills in prioritization, planning, scheduling, and productivity techniques to effectively manage workloads, deadlines, and multiple projects simultaneously.
-</p>
-    <a href="https://www.linkedin.com/learning/certificates/f49642ab295d8a014a9405fa838641f29944179a3d9d59b5185ddf66fae76d79/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bl4FX1dNLR%2FuLYxlvK6gIyA%3D%3D"
-target="_blank"
-class="cert-btn"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
+
+    <div class="cert-desc">
+      Strengthened prioritization, scheduling, and productivity systems for high-performance workflows.
+    </div>
+
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/f49642ab295d8a014a9405fa838641f29944179a3d9d59b5185ddf66fae76d79" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert4')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/Managing Your Time.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
+
 <!-- CERTIFICATE 5 -->
-<div class="cert-card">
-  <div class="cert-content">
-    <h3>AI in Project Management Foundations</h3>
+<div class="cert-card" data-category="AI LinkedIn">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">AI in Project Management Foundations</div>
     <div class="cert-provider">LinkedIn Learning</div>
-<p>
-Learned to integrate AI-powered tools into project coordination, task tracking, workflow automation, and performance monitoring to improve project outcomes. 
-</p>
-    <a href="https://www.linkedin.com/learning/certificates/fa3924892eb54b4a88dc1d447ff37f3747a713a9fd55ebd0b3d99554f1ee6cd3?trk=share_certificate"
-target="_blank"
-class="cert-btn"> <i class="fa-solid fa-graduation-cap"></i> Verify Certificate </a></div>
-</div>
-<!-- EDUCATION -->
 
-<div class="cert-card">
-  <div class="cert-content">
+    <div class="cert-desc">
+      Integrated AI tools into project planning, workflow automation, and performance tracking.
+    </div>
 
-<h3>Customer Experience (CX) for Business Success</h3>
-
-<div class="cert-provider">
-HP LiFE</div>
-
-<p>
-Learned customer-centric strategies for improving client satisfaction, building strong relationships, enhancing service delivery, and driving long-term business success.
-</p>
-
-<a href="https://www.life-global.org/certificate/8f1818ca-d284-4927-8a7e-e087b081b04e"
-target="_blank"
-class="cert-btn">
-
-<i class="fa-solid fa-graduation-cap"></i>
-Verify Certificate </a></div>
-
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.linkedin.com/learning/certificates/fa3924892eb54b4a88dc1d447ff37f3747a713a9fd55ebd0b3d99554f1ee6cd3" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert5')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/AI in Project Management.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
 
+<!-- CERTIFICATE 6 -->
+<div class="cert-card" data-category="Business HP LIFE">
+  <div class="cert-body">
+    <div class="badge">✓ Verified</div>
+    <div class="cert-title">Customer Experience (CX) for Business Success</div>
+    <div class="cert-provider">HP LIFE</div>
+
+    <div class="cert-desc">
+      Learned customer-centric strategies for improving service delivery and business growth.
+    </div>
+
+    <div class="btn-group">
+      <a class="btn btn-verify" href="https://www.life-global.org/certificate/8f1818ca-d284-4927-8a7e-e087b081b04e" target="_blank">Verify</a>
+      <a class="btn btn-preview" onclick="openModal('cert6')">Preview</a>
+      <a href="https://st2walton1.github.io/stanleywalton/Certificates/Customer Experience (CX) for Business Success.pdf" target="_blank" class="btn btn-download" download>PDF</a>    </div>
+  </div>
 </div>
 
 </div>
-
 </section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h2 id="modalTitle">Certificate Preview</h2>
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+    </div>
+
+    <img id="modalImage" src="" alt="Certificate Preview" />
+
+    <div class="modal-info">
+      <p><strong>Credential ID:</strong> <span id="credId">N/A</span></p>
+
+      <button onclick="copyCredential()" class="copy-btn">
+        📋 Copy Credential ID
+      </button>
+
+      <a id="modalVerify" href="#" target="_blank" class="verify-btn">
+        🔗 Verify Official Credential
+      </a>
+    </div>
+
+  </div>
+</div>
 
 <footer>
 
@@ -569,5 +489,122 @@ Verify Certificate </a></div>
     <span>Hire Me</span>
 
 </a>
+<script>
+
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".cert-card");
+
+// SEARCH (LIVE)
+searchInput.addEventListener("input", function () {
+    let value = this.value.toLowerCase();
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(value) ? "block" : "none";
+    });
+});
+
+// FILTER
+function filter(category) {
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+
+    cards.forEach(card => {
+        if (category === "all") {
+            card.style.display = "block";
+        } else {
+            card.style.display =
+                card.dataset.category.includes(category) ? "block" : "none";
+        }
+    });
+}
+
+// OPEN MODAL (PREMIUM)
+function openModal(certId) {
+
+    const modal = document.getElementById("modal");
+    modal.style.display = "flex";
+
+    // MAP CERTIFICATES (ADD YOUR REAL DATA HERE)
+    const data = {
+
+    cert1: {
+        title: "Generative AI for Productivity",
+        img: "images/cert1.jpg",
+        cred: "E05A9BB7F443179D12F5",
+        verify: "https://www.linkedin.com/learning/certificates/e05a9bb7f443179d12f5f847c0d1c35ce4b12ba7a07bcf6925fa856a1f5896a8"
+    },
+
+    cert2: {
+        title: "Research & Writing with Generative AI",
+        img: "images/cert2.jpg",
+        cred: "94C1D90BE7E3B185AAAE",
+        verify: "https://www.linkedin.com/learning/certificates/94c1d90be7e3b185aaae88f2a44609d65f891c12becdd3d8b29fcff3bea8e4bf"
+    },
+
+    cert3: {
+        title: "Copilot in Outlook Productivity",
+        img: "images/cert3.jpg",
+        cred: "2A60B53B364D75C8F8F429",
+        verify: "https://www.linkedin.com/learning/certificates/2a60b53b364d75c8f8f429b3c28b0eefebcace2328f733ddcc372ddbdf2ba151"
+    },
+
+    cert4: {
+        title: "Time Management Mastery",
+        img: "images/cert4.jpg",
+        cred: "F49642AB295D8A014A9405",
+        verify: "https://www.linkedin.com/learning/certificates/f49642ab295d8a014a9405fa838641f29944179a3d9d59b5185ddf66fae76d79"
+    },
+
+    cert5: {
+        title: "AI in Project Management Foundations",
+        img: "images/cert5.jpg",
+        cred: "FA3924892EB54B4A88DC1D",
+        verify: "https://www.linkedin.com/learning/certificates/fa3924892eb54b4a88dc1d447ff37f3747a713a9fd55ebd0b3d99554f1ee6cd3"
+    },
+
+    cert6: {
+        title: "Customer Experience (CX) for Business Success",
+        img: "images/cert6.jpg",
+        cred: "8F1818CA-D284-4927-8A7E",
+        verify: "https://www.life-global.org/certificate/8f1818ca-d284-4927-8a7e-e087b081b04e"
+    }
+
+};
+
+    let cert = data[certId];
+
+    document.getElementById("modalTitle").innerText = cert.title;
+    document.getElementById("modalImage").src = cert.img;
+    document.getElementById("credId").innerText = cert.cred;
+    document.getElementById("modalVerify").href = cert.verify;
+
+    modal.currentCert = cert;
+}
+
+// CLOSE MODAL
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+// CLICK OUTSIDE CLOSE
+window.onclick = function (e) {
+    let modal = document.getElementById("modal");
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+// COPY CREDENTIAL ID
+function copyCredential() {
+    let text = document.getElementById("credId").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Credential ID copied!");
+}
+
+</script>
 </body>
 </html>
